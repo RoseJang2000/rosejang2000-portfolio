@@ -94,6 +94,7 @@ const HeaderContainer = styled.header`
 const NavList = styled.div`
   display: flex;
   gap: 3rem;
+  z-index: 10;
 
   a {
     font-size: 1.3rem;
@@ -115,6 +116,7 @@ const NavList = styled.div`
     top: 5rem;
     border-radius: 0 0 1rem 1rem;
     overflow: hidden;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
     a {
       padding: 1rem;
       font-size: 1.2rem;
