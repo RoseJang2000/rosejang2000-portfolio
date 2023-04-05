@@ -8,6 +8,7 @@ import Projects from '@pages/Projects';
 import Skills from '@pages/Skills';
 import { lightTheme, darkTheme } from '@/styles/Theme';
 import Header from './containers/Header';
+import Footer from './containers/Footer';
 
 const App = () => {
   const defalutTheme = localStorage.getItem('theme');
@@ -24,12 +25,15 @@ const App = () => {
       >
         <GlobalStyle />
         <Header theme={theme} setTheme={setTheme} />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/aboutme" element={<AboutMe />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/skills" element={<Skills />} />
-        </Routes>
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/aboutme" element={<AboutMe />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/skills" element={<Skills />} />
+          </Routes>
+        </main>
+        <Footer />
       </ThemeProvider>
     </>
   );
