@@ -1,4 +1,15 @@
-const lightTheme = {
+export interface Theme {
+  bgColor: string;
+  titleColor: string;
+  descColor: string;
+  accentColor: string;
+  boxColor: string;
+  boxColor2: string;
+  pointColor: string;
+  lineColor: string;
+}
+
+const lightTheme: Theme = {
   bgColor: '#fefefe',
   titleColor: '#222',
   descColor: '#484B6A',
@@ -9,7 +20,7 @@ const lightTheme = {
   lineColor: '#9394A5',
 };
 
-const darkTheme = {
+const darkTheme: Theme = {
   bgColor: '#17202A',
   titleColor: '#fff',
   descColor: '#8899A6',
