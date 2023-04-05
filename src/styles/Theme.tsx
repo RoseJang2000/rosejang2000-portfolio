@@ -7,6 +7,7 @@ export interface Theme {
   boxColor2: string;
   pointColor: string;
   lineColor: string;
+  modeColor: string;
 }
 
 export const lightTheme: Theme = {
@@ -18,6 +19,7 @@ export const lightTheme: Theme = {
   boxColor2: '#D2D3DB',
   pointColor: '#3772FF',
   lineColor: '#9394A5',
+  modeColor: '#f49331',
 };
 
 export const darkTheme: Theme = {
@@ -29,6 +31,7 @@ export const darkTheme: Theme = {
   boxColor2: '#1C2733',
   pointColor: '#3772FF',
   lineColor: '#8B98A5',
+  modeColor: '#f4dd31',
 };
 
 export const theme = {
