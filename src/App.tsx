@@ -3,7 +3,7 @@ import Home from '@pages/Home';
 import Projects from '@pages/Projects';
 import Skills from '@pages/Skills';
 import { Route, Routes } from 'react-router-dom';
-import { GlobalStyle } from './GlobalStyle';
+import { GlobalStyle } from '@/styles/GlobalStyle';
 
 const App = () => {
   return (
