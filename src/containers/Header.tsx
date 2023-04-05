@@ -65,11 +65,14 @@ const HeaderContainer = styled.header`
   width: 100%;
   height: 5rem;
   padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
   background-color: ${(props) => props.theme.colors.boxColor};
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
+  z-index: 100;
 
   .title {
     display: flex;
