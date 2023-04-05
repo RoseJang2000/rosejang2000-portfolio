@@ -9,10 +9,10 @@ export interface Theme {
   lineColor: string;
 }
 
-const lightTheme: Theme = {
+export const lightTheme: Theme = {
   bgColor: '#fefefe',
   titleColor: '#222',
-  descColor: '#484B6A',
+  descColor: '#76778b',
   accentColor: '#111',
   boxColor: '#E4E5F1',
   boxColor2: '#D2D3DB',
@@ -20,7 +20,7 @@ const lightTheme: Theme = {
   lineColor: '#9394A5',
 };
 
-const darkTheme: Theme = {
+export const darkTheme: Theme = {
   bgColor: '#17202A',
   titleColor: '#fff',
   descColor: '#8899A6',
@@ -31,7 +31,7 @@ const darkTheme: Theme = {
   lineColor: '#8B98A5',
 };
 
-const theme = {
+export const theme = {
   lightTheme,
   darkTheme,
 };
