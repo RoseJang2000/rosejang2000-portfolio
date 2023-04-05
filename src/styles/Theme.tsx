@@ -13,7 +13,7 @@ export interface Theme {
 export const lightTheme: Theme = {
   bgColor: '#fefefe',
   titleColor: '#222',
-  descColor: '#76778b',
+  descColor: '#666779',
   accentColor: '#111',
   boxColor: '#E4E5F1',
   boxColor2: '#D2D3DB',

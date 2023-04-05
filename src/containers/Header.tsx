@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import blueHeart from '../../public/favicon.svg';
 import { BsFillMoonStarsFill, BsFillSunFill } from 'react-icons/bs';
+import { NavLink } from 'react-router-dom';
 
 interface HeaderProps {
   theme: string;
@@ -20,10 +21,16 @@ const Header = ({ theme, setTheme }: HeaderProps) => {
 
   return (
     <HeaderContainer>
-      <div>
-        <img src={blueHeart} />
+      <div className="title">
+        <img className="title-icon" src={blueHeart} />
         <h1>장장미 포트폴리오</h1>
       </div>
+      <NavList>
+        <NavLink to={'/'}>Home</NavLink>
+        <NavLink to={'/aboutme'}>About me</NavLink>
+        <NavLink to={'/projects'}>Projects</NavLink>
+        <NavLink to={'/skills'}>Skills</NavLink>
+      </NavList>
       <ThemeToggleButton onClick={handleToggleTheme} className={theme}>
         <BsFillMoonStarsFill />
         <BsFillSunFill />
@@ -36,10 +43,37 @@ const Header = ({ theme, setTheme }: HeaderProps) => {
 const HeaderContainer = styled.header`
   width: 100%;
   height: 5rem;
+  padding: 1rem;
   background-color: ${(props) => props.theme.boxColor};
   color: ${(props) => props.theme.descColor};
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  .title {
+    display: flex;
+    height: 100%;
+    font-size: 0.8rem;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .title-icon {
+    height: 100%;
+  }
+`;
+
+const NavList = styled.div`
+  display: flex;
+  gap: 3rem;
+
+  a {
+    color: ${(props) => props.theme.descColor};
+    font-size: 1.3rem;
+    font-weight: 700;
+    :hover,
+    &.active {
+      color: ${(props) => props.theme.accentColor};
+    }
+  }
 `;
 
 const ThemeToggleButton = styled.div`
