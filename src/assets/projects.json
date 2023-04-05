@@ -2,7 +2,13 @@
   {
     "title": "Party People",
     "desc": "여행 동행자 구하기 서비스",
-    "skillDesc": "",
+    "skillDesc": [
+      "캐러셀 슬라이드 구현",
+      "스크롤 애니메이션 구현",
+      "axios Interceptor를 이용한 토큰 만료 관리 및 재발급",
+      "Intersection Observer를 이용한 무한스크롤 구현",
+      "imgur API를 이용한 이미지 링크 발급"
+    ],
     "team": {
       "front": 3,
       "back": 3,
