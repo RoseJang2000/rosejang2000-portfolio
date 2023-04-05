@@ -1,8 +1,8 @@
 import styled, { keyframes } from 'styled-components';
 
-const DescBox = () => {
+const AboutMe = () => {
   return (
-    <DescBoxContainer>
+    <AboutMeContainer>
       <div className="bar">
         <div className="circle circle-1"></div>
         <div className="circle circle-2"></div>
@@ -31,7 +31,7 @@ const DescBox = () => {
           &gt; <span className="cursor"></span>
         </p>
       </div>
-    </DescBoxContainer>
+    </AboutMeContainer>
   );
 };
 
@@ -44,7 +44,7 @@ const blink = keyframes`
   }
 `;
 
-const DescBoxContainer = styled.div`
+const AboutMeContainer = styled.div`
   width: 46rem;
   border-radius: 0.5rem;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
@@ -63,6 +63,7 @@ const DescBoxContainer = styled.div`
     align-items: center;
     justify-content: center;
     position: relative;
+    cursor: default;
   }
   .circle {
     width: 1rem;
@@ -112,4 +113,4 @@ const DescBoxContainer = styled.div`
   }
 `;
 
-export default DescBox;
+export default AboutMe;
