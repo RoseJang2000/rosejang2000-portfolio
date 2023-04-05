@@ -12,4 +12,7 @@ export const GlobalStyle = createGlobalStyle`
   ul {
     list-style: none;
   }
+  body {
+    background-color: ${(props) => props.theme.colors.bgColor}
+  }
 `;
