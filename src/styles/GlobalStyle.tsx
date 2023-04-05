@@ -8,11 +8,25 @@ export const GlobalStyle = createGlobalStyle`
   }
   a {
     text-decoration: none;
+    color: ${(props) => props.theme.colors.descColor};
+    transition: 0.2s;
+    :hover {
+      transition: 0.2s;
+      color: ${(props) => props.theme.colors.accentColor};
+    }
   }
   ul {
     list-style: none;
   }
   body {
-    background-color: ${(props) => props.theme.colors.bgColor}
+    background-color: ${(props) => props.theme.colors.bgColor};
+    color: ${(props) => props.theme.colors.descColor};
+  }
+  main {
+    width: 100%;
+    min-height: calc(100vh - 5rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 `;

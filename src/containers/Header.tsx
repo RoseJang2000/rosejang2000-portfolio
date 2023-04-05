@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import blueHeart from '../../public/favicon.svg';
 import { BsFillMoonStarsFill, BsFillSunFill } from 'react-icons/bs';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { useState } from 'react';
 
 interface HeaderProps {
@@ -30,10 +30,10 @@ const Header = ({ theme, setTheme }: HeaderProps) => {
     <HeaderContainer>
       <div className="title">
         <img className="title-icon" src={blueHeart} />
-        <div className="title-text">
-          <h1>장장미</h1>
+        <Link to="/" className="title-text">
+          <h1>장장미&nbsp;</h1>
           <h1>포트폴리오</h1>
-        </div>
+        </Link>
       </div>
       <NavList className={isMenuOpen ? 'open' : 'close'}>
         <NavLink to={'/'}>Home</NavLink>
@@ -62,11 +62,11 @@ const HeaderContainer = styled.header`
   height: 5rem;
   padding: 1rem;
   background-color: ${(props) => props.theme.colors.boxColor};
-  color: ${(props) => props.theme.colors.descColor};
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
+
   .title {
     display: flex;
     height: 100%;
@@ -97,10 +97,8 @@ const NavList = styled.div`
   gap: 3rem;
 
   a {
-    color: ${(props) => props.theme.colors.descColor};
     font-size: 1.3rem;
     font-weight: 700;
-    :hover,
     &.active {
       color: ${(props) => props.theme.colors.accentColor};
     }
