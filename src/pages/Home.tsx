@@ -1,8 +1,16 @@
 import styled from 'styled-components';
 import AboutMe from '@components/Home/AboutMe';
 import ContactMe from '@components/Home/ContactMe';
+import { Button } from '@/styles/Button';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  const handleClickButton = (path: string) => {
+    navigate(`/${path}`);
+  };
+
   return (
     <HomeContainer>
       <div className="head">
@@ -27,6 +35,14 @@ const Home = () => {
       <AboutMe />
       <h2 className="category-title">💌 Contact me</h2>
       <ContactMe />
+      <div className="buttons">
+        <Button onClick={() => handleClickButton('projects')}>
+          프로젝트 보러가기
+        </Button>
+        <Button onClick={() => handleClickButton('skills')}>
+          스택 보러가기
+        </Button>
+      </div>
     </HomeContainer>
   );
 };
@@ -69,10 +85,21 @@ const HomeContainer = styled.div`
     margin-bottom: 1rem;
     font-size: 1.5rem;
   }
+  .buttons {
+    margin: 4rem 0;
+    display: flex;
+    gap: 2rem;
+  }
   @media screen and (max-width: 768px) {
     .head {
       padding: 2rem 0;
       grid-template-columns: 1fr;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .buttons {
+      flex-direction: column;
+      width: 100%;
     }
   }
 `;
