@@ -1,9 +1,5 @@
-import {
-  AiFillBulb,
-  AiFillGithub,
-  AiFillMail,
-  AiFillPushpin,
-} from 'react-icons/ai';
+import { AiFillBulb, AiFillGithub, AiFillMail } from 'react-icons/ai';
+import { RxNotionLogo } from 'react-icons/rx';
 import styled from 'styled-components';
 
 const ContactMe = () => {
@@ -48,9 +44,9 @@ const ContactMe = () => {
       <SocialItem>
         <a href="/" target="_blank" rel="noopener noreferrer">
           <div className="icon">
-            <AiFillPushpin />
+            <RxNotionLogo />
           </div>
-          Profile
+          Notion
         </a>
       </SocialItem>
     </ContactMeContainer>
