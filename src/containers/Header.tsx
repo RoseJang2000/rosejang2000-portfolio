@@ -36,7 +36,7 @@ const Header = ({ theme, setTheme }: HeaderProps) => {
         </Link>
       </div>
       <NavList className={isMenuOpen ? 'open' : 'close'}>
-        <NavLink to={'/'}>Home</NavLink>
+        <NavLink to={'/'}>About Me</NavLink>
         <NavLink to={'/projects'}>Projects</NavLink>
         <NavLink to={'/skills'}>Skills</NavLink>
       </NavList>
