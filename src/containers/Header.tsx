@@ -78,19 +78,29 @@ const HeaderContainer = styled.header`
     gap: 0.5rem;
   }
   .title-icon {
-    height: 100%;
+    height: 90%;
   }
   .title-text {
     font-size: 0.7rem;
     display: flex;
+    position: relative;
+    bottom: 0.1rem;
   }
 
   @media screen and (max-width: 768px) {
     padding-right: 5rem;
   }
   @media screen and (max-width: 576px) {
+    .title-icon {
+      height: 60%;
+    }
     .title-text {
-      font-size: 0.7rem;
+      font-size: 0.6rem;
+    }
+  }
+  @media screen and (max-width: 360px) {
+    .title-text {
+      font-size: 0.6rem;
       flex-direction: column;
     }
   }
