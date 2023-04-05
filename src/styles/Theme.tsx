@@ -19,7 +19,7 @@ export const lightTheme: Theme = {
   boxColor: '#E4E5F1',
   boxColor2: '#D2D3DB',
   pointColor: '#3772FF',
-  lineColor: '#9394A5',
+  lineColor: '#bcbcc6',
   modeColor: '#f49331',
   commandColor: '#006373',
 };
