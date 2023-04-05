@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import blueHeart from '../../public/favicon.svg';
 import { BsFillMoonStarsFill, BsFillSunFill } from 'react-icons/bs';
-import { Link, NavLink } from 'react-router-dom';
-import { useState } from 'react';
+import { Link, NavLink, useLocation } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 interface HeaderProps {
   theme: string;
@@ -10,6 +10,7 @@ interface HeaderProps {
 }
 
 const Header = ({ theme, setTheme }: HeaderProps) => {
+  const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   const handleToggleMenu = () => {
@@ -26,6 +27,10 @@ const Header = ({ theme, setTheme }: HeaderProps) => {
     }
   };
 
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [location]);
+
   return (
     <HeaderContainer>
       <div className="title">
@@ -37,7 +42,6 @@ const Header = ({ theme, setTheme }: HeaderProps) => {
       </div>
       <NavList className={isMenuOpen ? 'open' : 'close'}>
         <NavLink to={'/'}>Home</NavLink>
-        <NavLink to={'/aboutme'}>About me</NavLink>
         <NavLink to={'/projects'}>Projects</NavLink>
         <NavLink to={'/skills'}>Skills</NavLink>
       </NavList>
@@ -61,11 +65,14 @@ const HeaderContainer = styled.header`
   width: 100%;
   height: 5rem;
   padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
   background-color: ${(props) => props.theme.colors.boxColor};
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
+  z-index: 100;
 
   .title {
     display: flex;
@@ -74,19 +81,29 @@ const HeaderContainer = styled.header`
     gap: 0.5rem;
   }
   .title-icon {
-    height: 100%;
+    height: 90%;
   }
   .title-text {
     font-size: 0.7rem;
     display: flex;
+    position: relative;
+    bottom: 0.1rem;
   }
 
   @media screen and (max-width: 768px) {
     padding-right: 5rem;
   }
   @media screen and (max-width: 576px) {
+    .title-icon {
+      height: 60%;
+    }
     .title-text {
-      font-size: 0.7rem;
+      font-size: 0.6rem;
+    }
+  }
+  @media screen and (max-width: 360px) {
+    .title-text {
+      font-size: 0.6rem;
       flex-direction: column;
     }
   }
@@ -95,6 +112,7 @@ const HeaderContainer = styled.header`
 const NavList = styled.div`
   display: flex;
   gap: 3rem;
+  z-index: 10;
 
   a {
     font-size: 1.3rem;
@@ -116,6 +134,7 @@ const NavList = styled.div`
     top: 5rem;
     border-radius: 0 0 1rem 1rem;
     overflow: hidden;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
     a {
       padding: 1rem;
       font-size: 1.2rem;
