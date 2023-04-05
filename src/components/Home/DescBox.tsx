@@ -7,7 +7,7 @@ const DescBox = () => {
         <div className="circle circle-1"></div>
         <div className="circle circle-2"></div>
         <div className="circle circle-3"></div>
-        <p className="text">$ rosejang2000-portfolio</p>
+        <p className="text">$ rosejang2000</p>
       </div>
       <div className="screen">
         <p className="command">&gt; cat README.md</p>
@@ -18,9 +18,15 @@ const DescBox = () => {
           molestias cupiditate. Veniam.
         </p>
         <p className="command">&gt; cat MORE.md</p>
-        <p className="response"></p>
+        <p className="response">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
+          distinctio temporibus quibusdam tenetur illum.
+        </p>
         <p className="command">&gt; ls programming skills</p>
-        <p className="response"></p>
+        <p className="response">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
+          distinctio temporibus quibusdam tenetur illum.
+        </p>
         <p className="command">
           &gt; <span className="cursor"></span>
         </p>
@@ -39,8 +45,7 @@ const blink = keyframes`
 `;
 
 const DescBoxContainer = styled.div`
-  width: 40rem;
-  height: 20rem;
+  width: 46rem;
   border-radius: 0.5rem;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
   overflow: hidden;
@@ -79,7 +84,7 @@ const DescBoxContainer = styled.div`
   }
 
   .screen {
-    padding: 1rem;
+    padding: 1.5rem;
   }
   .command {
     color: ${(props) => props.theme.colors.commandColor};
@@ -89,6 +94,7 @@ const DescBoxContainer = styled.div`
   }
   .response {
     color: ${(props) => props.theme.colors.titleColor};
+    margin-bottom: 1.5rem;
   }
 
   .cursor {
@@ -99,6 +105,10 @@ const DescBoxContainer = styled.div`
     opacity: 0.5;
     margin-left: 0.5rem;
     animation: ${blink} 1.2s infinite;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
   }
 `;
 
