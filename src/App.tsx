@@ -8,6 +8,7 @@ import Skills from '@pages/Skills';
 import { lightTheme, darkTheme } from '@/styles/Theme';
 import Header from './containers/Header';
 import Footer from './containers/Footer';
+import ScrollToTop from './utils/ScrollToTop';
 
 const App = () => {
   const defalutTheme = localStorage.getItem('theme');
@@ -17,6 +18,7 @@ const App = () => {
 
   return (
     <>
+      <ScrollToTop />
       <ThemeProvider
         theme={
           theme === 'light' ? { colors: lightTheme } : { colors: darkTheme }
