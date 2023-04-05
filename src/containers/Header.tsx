@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import blueHeart from '../../public/favicon.svg';
 import { BsFillMoonStarsFill, BsFillSunFill } from 'react-icons/bs';
-import { Link, NavLink } from 'react-router-dom';
-import { useState } from 'react';
+import { Link, NavLink, useLocation } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 interface HeaderProps {
   theme: string;
@@ -10,6 +10,7 @@ interface HeaderProps {
 }
 
 const Header = ({ theme, setTheme }: HeaderProps) => {
+  const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   const handleToggleMenu = () => {
@@ -25,6 +26,10 @@ const Header = ({ theme, setTheme }: HeaderProps) => {
       localStorage.setItem('theme', 'light');
     }
   };
+
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [location]);
 
   return (
     <HeaderContainer>
