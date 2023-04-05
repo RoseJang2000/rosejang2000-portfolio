@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import AboutMe from '@components/Home/AboutMe';
+import ContactMe from '@components/Home/ContactMe';
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <h2 className="category-title">😄 About me</h2>
       <AboutMe />
       <h2 className="category-title">💌 Contact me</h2>
+      <ContactMe />
     </HomeContainer>
   );
 };
