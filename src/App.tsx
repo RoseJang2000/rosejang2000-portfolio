@@ -17,7 +17,11 @@ const App = () => {
 
   return (
     <>
-      <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+      <ThemeProvider
+        theme={
+          theme === 'light' ? { colors: lightTheme } : { colors: darkTheme }
+        }
+      >
         <GlobalStyle />
         <Header theme={theme} setTheme={setTheme} />
         <Routes>
