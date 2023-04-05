@@ -82,6 +82,7 @@ const SocialItem = styled.li`
     justify-content: center;
     padding: 1rem;
     gap: 1rem;
+    font-size: 1.2rem;
   }
   .icon {
     width: 4.5rem;
