@@ -13,11 +13,7 @@ const Header = ({ theme, setTheme }: HeaderProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   const handleToggleMenu = () => {
-    if (isMenuOpen) {
-      setTimeout(() => setIsMenuOpen(false), 200);
-    } else {
-      setIsMenuOpen(true);
-    }
+    setIsMenuOpen((cur) => !cur);
   };
 
   const handleToggleTheme = () => {
@@ -81,7 +77,7 @@ const HeaderContainer = styled.header`
     height: 100%;
   }
   .title-text {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     display: flex;
   }
 
@@ -90,7 +86,7 @@ const HeaderContainer = styled.header`
   }
   @media screen and (max-width: 576px) {
     .title-text {
-      font-size: 0.8rem;
+      font-size: 0.7rem;
       flex-direction: column;
     }
   }
@@ -111,7 +107,9 @@ const NavList = styled.div`
   }
 
   @media screen and (max-width: 768px) {
-    display: none;
+    &.close {
+      display: none;
+    }
     width: 8rem;
     flex-direction: column;
     gap: 0;
