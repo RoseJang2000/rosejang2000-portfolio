@@ -71,6 +71,10 @@ export const projectsData: Project[] = [
         name: '노션',
         url: 'https://phrygian-neem-c42.notion.site/Main-Project-6b6a883620bd4a6ebeeca2c5338a38fa',
       },
+      {
+        name: '구현 완료 화면',
+        url: 'https://phrygian-neem-c42.notion.site/e59be6b540364dfb90dc40edaa98aa61',
+      },
     ],
     dev: {
       start: '2023-03-03',
