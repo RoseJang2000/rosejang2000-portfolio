@@ -33,7 +33,7 @@ const ProjectArticle = ({ project }: ProjectArticleProps) => {
         <section className="project-info">
           <h1 className="project-title">{project.title}</h1>
           <p className="project-desc">{project.desc}</p>
-          <div className="project-stack">
+          <ProjectStacks>
             <h1 className="project-stack-title">🛠 사용 스택</h1>
             <ul className="project-stack-list">
               {project.stack.map((stack, index) => (
@@ -42,7 +42,7 @@ const ProjectArticle = ({ project }: ProjectArticleProps) => {
                 </li>
               ))}
             </ul>
-          </div>
+          </ProjectStacks>
         </section>
       </ArticleWrapper>
     </>
@@ -115,9 +115,10 @@ const ArticleWrapper = styled.article`
     flex-direction: column;
     gap: 0.5rem;
   }
-  .project-stack {
-    margin-top: 1rem;
-  }
+`;
+
+export const ProjectStacks = styled.ul`
+  width: 100%;
   .project-stack-list {
     display: flex;
     flex-wrap: wrap;
