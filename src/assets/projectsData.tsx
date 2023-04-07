@@ -37,7 +37,7 @@ interface ProdPage {
 
 export const projectsData: Project[] = [
   {
-    title: 'Party People',
+    title: '🎉 Party People',
     desc: '여행 동행자 구하기 서비스',
     skillDesc: [
       '캐러셀 슬라이드 구현',
@@ -155,7 +155,7 @@ export const projectsData: Project[] = [
     thumbnail: 'src/assets/thumbnails/partyPeople.png',
   },
   {
-    title: 'Color Aesthetics',
+    title: '🎨 Color Aesthetics',
     desc: '색상별 이미지 검색 사이트',
     skillDesc: [
       'Intersection Observer를 이용한 무한스크롤 구현',
@@ -211,7 +211,7 @@ export const projectsData: Project[] = [
     thumbnail: 'src/assets/thumbnails/colorAesthetics.png',
   },
   {
-    title: 'Our City',
+    title: '⚽️ Our City',
     desc: '맨체스터 시티 정보 사이트',
     skillDesc: [
       '캐러셀 슬라이드 구현',
@@ -276,7 +276,7 @@ export const projectsData: Project[] = [
     thumbnail: 'src/assets/thumbnails/ourCity.png',
   },
   {
-    title: '장장미 포트폴리오',
+    title: '👤 장장미 포트폴리오',
     desc: '포트폴리오 웹사이트',
     skillDesc: [
       'Vite를 이용한 프로젝트 개발환경 구축',
@@ -303,7 +303,7 @@ export const projectsData: Project[] = [
     thumbnail: 'src/assets/thumbnails/portfolio.png',
   },
   {
-    title: 'Stack Overflow Clone',
+    title: '💬 Stack Overflow Clone',
     desc: 'Stack Overflow 서비스 클론',
     skillDesc: ['toast UI editor 사용', '반응형 웹 구현'],
     team: {
@@ -344,7 +344,7 @@ export const projectsData: Project[] = [
     thumbnail: 'src/assets/thumbnails/stackOverflowClone.png',
   },
   {
-    title: 'City Weather',
+    title: '🌡 City Weather',
     desc: '나라/지역 날씨 검색 사이트',
     skillDesc: [
       'open weather API를 이용한 나라/지역별 날씨 검색',
