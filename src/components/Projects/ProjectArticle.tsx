@@ -10,6 +10,11 @@ const ProjectArticle = ({ project }: ProjectArticleProps) => {
   const [isShowModal, setIsShowModal] = useState<boolean>(false);
   return (
     <ArticleWrapper>
+      <div className="project-hover">
+        이 프로젝트
+        <br />
+        자세히 보기
+      </div>
       <div className="project-thumbnail">
         <img className="project-thumbnail-img" src={project.thumbnail} />
       </div>
@@ -41,6 +46,7 @@ const ArticleWrapper = styled.article`
   border: 1px solid ${(props) => props.theme.colors.lineColor};
   border-radius: 1rem;
   overflow: hidden;
+  position: relative;
   cursor: pointer;
   transition: 0.3s;
   :hover {
@@ -48,32 +54,28 @@ const ArticleWrapper = styled.article`
     .project-thumbnail-img {
       transform: scale(1.1);
     }
+    .project-hover {
+      opacity: 1;
+    }
+  }
+  .project-hover {
+    position: absolute;
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+    transition: 0.3s;
+    opacity: 0;
   }
   .project-thumbnail {
     width: 100%;
     height: 10rem;
     overflow: hidden;
-    position: relative;
-  }
-  .project-thumbnail-text {
-    position: absolute;
-    width: 100%;
-    z-index: 10;
-    color: #fff;
-    bottom: 0;
-    height: 3rem;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 0.5rem;
-    font-size: 1.1rem;
-    padding: 0 1rem;
-    .icon {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
   }
   .project-thumbnail-img {
     width: 100%;
