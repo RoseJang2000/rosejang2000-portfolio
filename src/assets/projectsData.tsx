@@ -7,7 +7,6 @@ export interface Project {
     back: number;
     myRole: string[];
   };
-  thumbnail: string;
   links: Link[];
   dev: null | {
     start?: string;
@@ -145,7 +144,6 @@ export const projectsData: Project[] = [
         },
       ],
     },
-    thumbnail: '/images/partyPeople.png',
   },
   {
     title: '🎨 Color Aesthetics',
@@ -190,7 +188,6 @@ export const projectsData: Project[] = [
         },
       ],
     },
-    thumbnail: '/images/colorAesthetics.png',
   },
   {
     title: '⚽️ Our City',
@@ -250,10 +247,9 @@ export const projectsData: Project[] = [
         },
       ],
     },
-    thumbnail: '/images/ourCity.png',
   },
   {
-    title: '👤 장장미 포트폴리오',
+    title: '👤 Portfolio',
     desc: '포트폴리오 웹사이트',
     skillDesc: [
       'Vite를 이용한 프로젝트 개발환경 구축',
@@ -298,7 +294,6 @@ export const projectsData: Project[] = [
       ],
     },
     stack: ['React', 'TypeScript', 'Styled-components', 'React-Router'],
-    thumbnail: '/images/portfolio.png',
   },
   {
     title: '💬 Stack Overflow Clone',
@@ -360,7 +355,6 @@ export const projectsData: Project[] = [
         },
       ],
     },
-    thumbnail: '/images/stackOverflowClone.png',
   },
   {
     title: '🌡 City Weather',
@@ -410,6 +404,5 @@ export const projectsData: Project[] = [
         },
       ],
     },
-    thumbnail: '/images/cityWeather.png',
   },
 ];

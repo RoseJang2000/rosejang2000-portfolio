@@ -9,14 +9,20 @@ interface ProjectArticleProps {
 
 const ProjectArticle = ({ project }: ProjectArticleProps) => {
   const [isShowModal, setIsShowModal] = useState<boolean>(false);
+  const imageSrc = project.title.split(' ').slice(1).join('').toLowerCase();
 
   const handleOpenModal = () => {
     setIsShowModal(true);
   };
+
   return (
     <>
       {isShowModal && (
-        <ProjectModal project={project} setIsShowModal={setIsShowModal} />
+        <ProjectModal
+          project={project}
+          imageSrc={imageSrc}
+          setIsShowModal={setIsShowModal}
+        />
       )}
       <ArticleWrapper onClick={handleOpenModal}>
         <div className="project-hover">
@@ -25,7 +31,17 @@ const ProjectArticle = ({ project }: ProjectArticleProps) => {
           자세히 보기
         </div>
         <div className="project-thumbnail">
-          <img className="project-thumbnail-img" src={project.thumbnail} />
+          <picture className="project-thumbnail-img">
+            <source
+              srcSet={`/images/avif/${imageSrc}.avif`}
+              type="image/avif"
+            />
+            <source
+              srcSet={`/images/webp/${imageSrc}.webp`}
+              type="image/webp"
+            />
+            <img src={`/images/png/${imageSrc}.png`} />
+          </picture>
         </div>
         <div className={`project-type ${project.team ? 'team' : 'solo'}`}>
           {project.team ? '팀 프로젝트' : '개인 프로젝트'}
@@ -86,12 +102,19 @@ const ArticleWrapper = styled.article`
     width: 100%;
     height: 10rem;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .project-thumbnail-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    transition: 0.3s;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.3s;
+    }
   }
   .project-type {
     width: 100%;

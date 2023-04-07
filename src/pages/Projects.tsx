@@ -25,12 +25,12 @@ const Notice = styled.div`
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background-color: ${(props) => props.theme.colors.pointColor};
+  border: 2px solid ${(props) => props.theme.colors.titleColor};
   padding: 1rem;
   margin-top: 2rem;
   font-weight: 500;
   font-size: 1.2rem;
-  color: #fff;
+  color: ${(props) => props.theme.colors.titleColor};
   .icon {
     align-self: flex-start;
   }
