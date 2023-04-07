@@ -27,7 +27,7 @@ export const lightTheme: Theme = {
 export const darkTheme: Theme = {
   bgColor: '#17202A',
   titleColor: '#fff',
-  descColor: '#8899A6',
+  descColor: '#a2b3c1',
   accentColor: '#fff',
   boxColor: '#25303B',
   boxColor2: '#1C2733',
