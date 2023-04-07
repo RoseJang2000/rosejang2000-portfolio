@@ -7,10 +7,15 @@ import { RiSubtractLine } from 'react-icons/ri';
 
 interface ProjectModalProps {
   project: Project;
+  imageSrc: string;
   setIsShowModal: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const ProjectModal = ({ project, setIsShowModal }: ProjectModalProps) => {
+const ProjectModal = ({
+  project,
+  imageSrc,
+  setIsShowModal,
+}: ProjectModalProps) => {
   const [currentTab, setCurrentTab] = useState({
     index: 0,
     name: 'desktop',
@@ -59,7 +64,17 @@ const ProjectModal = ({ project, setIsShowModal }: ProjectModalProps) => {
             </span>
           </CloseButton2>
           <LeftSection>
-            <img className="project-img" src={project.thumbnail} />
+            <picture className="project-img">
+              <source
+                srcSet={`/images/avif/${imageSrc}.avif`}
+                type="image/avif"
+              />
+              <source
+                srcSet={`/images/webp/${imageSrc}.webp`}
+                type="image/webp"
+              />
+              <img src={`/images/png/${imageSrc}.png`} />
+            </picture>
             <Information>
               <h1 className="project-title">{project.title}</h1>
               <p className="project-desc">{project.desc}</p>
@@ -238,9 +253,12 @@ const LeftSection = styled.section`
   overflow: auto;
   .project-img {
     width: 100%;
-    object-fit: cover;
-    border-radius: 1rem;
-    border: 1px solid ${(props) => props.theme.colors.lineColor};
+    img {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 1rem;
+      border: 1px solid ${(props) => props.theme.colors.lineColor};
+    }
   }
   @media screen and (max-width: 768px) {
     height: fit-content;
