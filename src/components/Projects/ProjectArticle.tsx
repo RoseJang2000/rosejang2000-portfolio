@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Project } from '@assets/projectsData';
 import { useState } from 'react';
+import ProjectModal from './ProjectModal';
 
 interface ProjectArticleProps {
   project: Project;
@@ -8,34 +9,43 @@ interface ProjectArticleProps {
 
 const ProjectArticle = ({ project }: ProjectArticleProps) => {
   const [isShowModal, setIsShowModal] = useState<boolean>(false);
+
+  const handleOpenModal = () => {
+    setIsShowModal(true);
+  };
   return (
-    <ArticleWrapper>
-      <div className="project-hover">
-        이 프로젝트
-        <br />
-        자세히 보기
-      </div>
-      <div className="project-thumbnail">
-        <img className="project-thumbnail-img" src={project.thumbnail} />
-      </div>
-      <div className={`project-type ${project.team ? 'team' : 'solo'}`}>
-        {project.team ? '팀 프로젝트' : '개인 프로젝트'}
-      </div>
-      <section className="project-info">
-        <h1 className="project-title">{project.title}</h1>
-        <p className="project-desc">{project.desc}</p>
-        <div className="project-stack">
-          <h1 className="project-stack-title">🛠 사용 스택</h1>
-          <ul className="project-stack-list">
-            {project.stack.map((stack, index) => (
-              <li className="project-stack-item" key={index}>
-                {stack}
-              </li>
-            ))}
-          </ul>
+    <>
+      {isShowModal && (
+        <ProjectModal project={project} setIsShowModal={setIsShowModal} />
+      )}
+      <ArticleWrapper onClick={handleOpenModal}>
+        <div className="project-hover">
+          이 프로젝트
+          <br />
+          자세히 보기
         </div>
-      </section>
-    </ArticleWrapper>
+        <div className="project-thumbnail">
+          <img className="project-thumbnail-img" src={project.thumbnail} />
+        </div>
+        <div className={`project-type ${project.team ? 'team' : 'solo'}`}>
+          {project.team ? '팀 프로젝트' : '개인 프로젝트'}
+        </div>
+        <section className="project-info">
+          <h1 className="project-title">{project.title}</h1>
+          <p className="project-desc">{project.desc}</p>
+          <div className="project-stack">
+            <h1 className="project-stack-title">🛠 사용 스택</h1>
+            <ul className="project-stack-list">
+              {project.stack.map((stack, index) => (
+                <li className="project-stack-item" key={index}>
+                  {stack}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      </ArticleWrapper>
+    </>
   );
 };
 
