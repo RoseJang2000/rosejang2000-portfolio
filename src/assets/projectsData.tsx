@@ -92,19 +92,19 @@ export const projectsData: Project[] = [
           pageInfo: [
             {
               name: '메인 페이지',
-              vid: '@assets/partyPeople/Main/main_desktop.mov',
+              vid: 'src/assets/partyPeople/Main/main_desktop.mov',
             },
             {
               name: '대륙 선택 페이지',
-              vid: '@assets/partyPeople/ContinentSelect/continentSelect_desktop.mov',
+              vid: 'src/assets/partyPeople/ContinentSelect/continentSelect_desktop.mov',
             },
             {
               name: '동행글 리스트 페이지',
-              vid: '@assets/partyPeople/ContentList/contentList_desktop.mov',
+              vid: 'src/assets/partyPeople/ContentList/contentList_desktop.mov',
             },
             {
               name: '프로필 페이지',
-              vid: '@assets/partyPeople/Profile/profile_desktop.mov',
+              vid: 'src/assets/partyPeople/Profile/profile_desktop.mov',
             },
           ],
         },
@@ -113,19 +113,19 @@ export const projectsData: Project[] = [
           pageInfo: [
             {
               name: '메인 페이지',
-              vid: '@assets/partyPeople/Main/main_tablet.mov',
+              vid: 'src/assets/partyPeople/Main/main_tablet.mov',
             },
             {
               name: '대륙 선택 페이지',
-              vid: '@assets/partyPeople/ContinentSelect/continentSelect_tablet.mov',
+              vid: 'src/assets/partyPeople/ContinentSelect/continentSelect_tablet.mov',
             },
             {
               name: '동행글 리스트 페이지',
-              vid: '@assets/partyPeople/ContentList/contentList_tablet.mov',
+              vid: 'src/assets/partyPeople/ContentList/contentList_tablet.mov',
             },
             {
               name: '프로필 페이지',
-              vid: '@assets/partyPeople/Profile/profile_tablet.mov',
+              vid: 'src/assets/partyPeople/Profile/profile_tablet.mov',
             },
           ],
         },
@@ -134,25 +134,25 @@ export const projectsData: Project[] = [
           pageInfo: [
             {
               name: '메인 페이지',
-              vid: '@assets/partyPeople/Main/main_mobile.mov',
+              vid: 'src/assets/partyPeople/Main/main_mobile.mov',
             },
             {
               name: '대륙 선택 페이지',
-              vid: '@assets/partyPeople/ContinentSelect/continentSelect_mobile.mov',
+              vid: 'src/assets/partyPeople/ContinentSelect/continentSelect_mobile.mov',
             },
             {
               name: '동행글 리스트 페이지',
-              vid: '@assets/partyPeople/ContentList/contentList_mobile.mov',
+              vid: 'src/assets/partyPeople/ContentList/contentList_mobile.mov',
             },
             {
               name: '프로필 페이지',
-              vid: '@assets/partyPeople/Profile/profile_mobile.mov',
+              vid: 'src/assets/partyPeople/Profile/profile_mobile.mov',
             },
           ],
         },
       ],
     },
-    thumbnail: '@assets/thumbnails/partyPeople.png',
+    thumbnail: 'src/assets/thumbnails/partyPeople.png',
   },
   {
     title: 'Color Aesthetics',
@@ -184,7 +184,7 @@ export const projectsData: Project[] = [
           pageInfo: [
             {
               name: '메인 페이지',
-              vid: '@assets/colorAesthetics/color_desktop.mov',
+              vid: 'src/assets/colorAesthetics/color_desktop.mov',
             },
           ],
         },
@@ -193,7 +193,7 @@ export const projectsData: Project[] = [
           pageInfo: [
             {
               name: '메인 페이지',
-              vid: '@assets/colorAesthetics/color_tablet.mov',
+              vid: 'src/assets/colorAesthetics/color_tablet.mov',
             },
           ],
         },
@@ -202,13 +202,13 @@ export const projectsData: Project[] = [
           pageInfo: [
             {
               name: '메인 페이지',
-              vid: '@assets/colorAesthetics/color_mobile.mov',
+              vid: 'src/assets/colorAesthetics/color_mobile.mov',
             },
           ],
         },
       ],
     },
-    thumbnail: '@assets/thumbnails/colorAesthetics.png',
+    thumbnail: 'src/assets/thumbnails/colorAesthetics.png',
   },
   {
     title: 'Our City',
@@ -249,7 +249,7 @@ export const projectsData: Project[] = [
           pageInfo: [
             {
               name: '전체 페이지 시연',
-              vid: '@assets/ourCity/city_desktop.mov',
+              vid: 'src/assets/ourCity/city_desktop.mov',
             },
           ],
         },
@@ -258,7 +258,7 @@ export const projectsData: Project[] = [
           pageInfo: [
             {
               name: '전체 페이지 시연',
-              vid: '@assets/ourCity/city_tablet.mov',
+              vid: 'src/assets/ourCity/city_tablet.mov',
             },
           ],
         },
@@ -267,13 +267,13 @@ export const projectsData: Project[] = [
           pageInfo: [
             {
               name: '전체 페이지 시연',
-              vid: '@assets/ourCity/city_mobile.mov',
+              vid: 'src/assets/ourCity/city_mobile.mov',
             },
           ],
         },
       ],
     },
-    thumbnail: '@assets/thumbnails/ourCity.png',
+    thumbnail: 'src/assets/thumbnails/ourCity.png',
   },
   {
     title: '장장미 포트폴리오',
@@ -300,7 +300,7 @@ export const projectsData: Project[] = [
       end: '2023-04-07',
     },
     stack: ['React', 'TypeScript', 'Styled-components', 'React-Router'],
-    thumbnail: '@assets/thumbnails/portfolio.png',
+    thumbnail: 'src/assets/thumbnails/portfolio.png',
   },
   {
     title: 'Stack Overflow Clone',
@@ -341,7 +341,7 @@ export const projectsData: Project[] = [
       'Styled-components',
       'React-Router',
     ],
-    thumbnail: '@assets/thumbnails/stackOverflowClone.png',
+    thumbnail: 'src/assets/thumbnails/stackOverflowClone.png',
   },
   {
     title: 'City Weather',
@@ -378,7 +378,7 @@ export const projectsData: Project[] = [
           pageInfo: [
             {
               name: '서비스 시연',
-              vid: '@assets/cityWeather/weather_desktop.mov',
+              vid: 'src/assets/cityWeather/weather_desktop.mov',
             },
           ],
         },
@@ -387,7 +387,7 @@ export const projectsData: Project[] = [
           pageInfo: [
             {
               name: '서비스 시연',
-              vid: '@assets/cityWeather/weather_tablet.mov',
+              vid: 'src/assets/cityWeather/weather_tablet.mov',
             },
           ],
         },
@@ -396,12 +396,12 @@ export const projectsData: Project[] = [
           pageInfo: [
             {
               name: '서비스 시연',
-              vid: '@assets/cityWeather/weather_mobile.mov',
+              vid: 'src/assets/cityWeather/weather_mobile.mov',
             },
           ],
         },
       ],
     },
-    thumbnail: '@assets/thumbnails/cityWeather.png',
+    thumbnail: 'src/assets/thumbnails/cityWeather.png',
   },
 ];
