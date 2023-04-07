@@ -85,11 +85,11 @@ const SocialItem = styled.li`
     height: 4.5rem;
     border-radius: 50%;
     font-size: 2rem;
-    color: ${(props) => props.theme.colors.bgColor};
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: ${(props) => props.theme.colors.titleColor};
+    background-color: ${(props) => props.theme.colors.pointColor};
     transition: 0.3s;
   }
   :hover {
