@@ -15,9 +15,11 @@ export interface Project {
     period?: string;
   };
   stack: string[];
-  prod?: {
+  prod: {
     isTeam: boolean;
-    pages: ProdPage[];
+    desktop: ProdPage[];
+    tablet: ProdPage[];
+    mobile: ProdPage[];
   };
 }
 
@@ -27,12 +29,9 @@ interface Link {
 }
 
 interface ProdPage {
-  type: string;
-  pageInfo: {
-    name: string;
-    img?: string;
-    vid?: string;
-  }[];
+  name: string;
+  img?: string;
+  vid?: string;
 }
 
 export const projectsData: Project[] = [
@@ -90,69 +89,58 @@ export const projectsData: Project[] = [
     ],
     prod: {
       isTeam: true,
-      pages: [
+      desktop: [
         {
-          type: 'Desktop',
-          pageInfo: [
-            {
-              name: '메인 페이지',
-              vid: 'src/assets/partyPeople/Main/main_desktop.mov',
-            },
-            {
-              name: '대륙 선택 페이지',
-              vid: 'src/assets/partyPeople/ContinentSelect/continentSelect_desktop.mov',
-            },
-            {
-              name: '동행글 리스트 페이지',
-              vid: 'src/assets/partyPeople/ContentList/contentList_desktop.mov',
-            },
-            {
-              name: '프로필 페이지',
-              vid: 'src/assets/partyPeople/Profile/profile_desktop.mov',
-            },
-          ],
+          name: '메인 페이지',
+          vid: 'src/assets/partyPeople/Main/main_desktop.mov',
         },
         {
-          type: 'Tablet',
-          pageInfo: [
-            {
-              name: '메인 페이지',
-              vid: 'src/assets/partyPeople/Main/main_tablet.mov',
-            },
-            {
-              name: '대륙 선택 페이지',
-              vid: 'src/assets/partyPeople/ContinentSelect/continentSelect_tablet.mov',
-            },
-            {
-              name: '동행글 리스트 페이지',
-              vid: 'src/assets/partyPeople/ContentList/contentList_tablet.mov',
-            },
-            {
-              name: '프로필 페이지',
-              vid: 'src/assets/partyPeople/Profile/profile_tablet.mov',
-            },
-          ],
+          name: '대륙 선택 페이지',
+          vid: 'src/assets/partyPeople/ContinentSelect/continentSelect_desktop.mov',
         },
         {
-          type: 'Mobile',
-          pageInfo: [
-            {
-              name: '메인 페이지',
-              vid: 'src/assets/partyPeople/Main/main_mobile.mov',
-            },
-            {
-              name: '대륙 선택 페이지',
-              vid: 'src/assets/partyPeople/ContinentSelect/continentSelect_mobile.mov',
-            },
-            {
-              name: '동행글 리스트 페이지',
-              vid: 'src/assets/partyPeople/ContentList/contentList_mobile.mov',
-            },
-            {
-              name: '프로필 페이지',
-              vid: 'src/assets/partyPeople/Profile/profile_mobile.mov',
-            },
-          ],
+          name: '동행글 리스트 페이지',
+          vid: 'src/assets/partyPeople/ContentList/contentList_desktop.mov',
+        },
+        {
+          name: '프로필 페이지',
+          vid: 'src/assets/partyPeople/Profile/profile_desktop.mov',
+        },
+      ],
+      tablet: [
+        {
+          name: '메인 페이지',
+          vid: 'src/assets/partyPeople/Main/main_tablet.mov',
+        },
+        {
+          name: '대륙 선택 페이지',
+          vid: 'src/assets/partyPeople/ContinentSelect/continentSelect_tablet.mov',
+        },
+        {
+          name: '동행글 리스트 페이지',
+          vid: 'src/assets/partyPeople/ContentList/contentList_tablet.mov',
+        },
+        {
+          name: '프로필 페이지',
+          vid: 'src/assets/partyPeople/Profile/profile_tablet.mov',
+        },
+      ],
+      mobile: [
+        {
+          name: '메인 페이지',
+          vid: 'src/assets/partyPeople/Main/main_mobile.mov',
+        },
+        {
+          name: '대륙 선택 페이지',
+          vid: 'src/assets/partyPeople/ContinentSelect/continentSelect_mobile.mov',
+        },
+        {
+          name: '동행글 리스트 페이지',
+          vid: 'src/assets/partyPeople/ContentList/contentList_mobile.mov',
+        },
+        {
+          name: '프로필 페이지',
+          vid: 'src/assets/partyPeople/Profile/profile_mobile.mov',
         },
       ],
     },
@@ -182,33 +170,22 @@ export const projectsData: Project[] = [
     stack: ['React', 'TypeScript', 'Axios'],
     prod: {
       isTeam: false,
-      pages: [
+      desktop: [
         {
-          type: 'Desktop',
-          pageInfo: [
-            {
-              name: '메인 페이지',
-              vid: 'src/assets/colorAesthetics/color_desktop.mov',
-            },
-          ],
+          name: '메인 페이지',
+          vid: 'src/assets/colorAesthetics/color_desktop.mov',
         },
+      ],
+      tablet: [
         {
-          type: 'Tablet',
-          pageInfo: [
-            {
-              name: '메인 페이지',
-              vid: 'src/assets/colorAesthetics/color_tablet.mov',
-            },
-          ],
+          name: '메인 페이지',
+          vid: 'src/assets/colorAesthetics/color_tablet.mov',
         },
+      ],
+      mobile: [
         {
-          type: 'Mobile',
-          pageInfo: [
-            {
-              name: '메인 페이지',
-              vid: 'src/assets/colorAesthetics/color_mobile.mov',
-            },
-          ],
+          name: '메인 페이지',
+          vid: 'src/assets/colorAesthetics/color_mobile.mov',
         },
       ],
     },
@@ -247,33 +224,22 @@ export const projectsData: Project[] = [
     ],
     prod: {
       isTeam: false,
-      pages: [
+      desktop: [
         {
-          type: 'Desktop',
-          pageInfo: [
-            {
-              name: '전체 페이지 시연',
-              vid: 'src/assets/ourCity/city_desktop.mov',
-            },
-          ],
+          name: '전체 페이지 시연',
+          vid: 'src/assets/ourCity/city_desktop.mov',
         },
+      ],
+      tablet: [
         {
-          type: 'Tablet',
-          pageInfo: [
-            {
-              name: '전체 페이지 시연',
-              vid: 'src/assets/ourCity/city_tablet.mov',
-            },
-          ],
+          name: '전체 페이지 시연',
+          vid: 'src/assets/ourCity/city_tablet.mov',
         },
+      ],
+      mobile: [
         {
-          type: 'Mobile',
-          pageInfo: [
-            {
-              name: '전체 페이지 시연',
-              vid: 'src/assets/ourCity/city_mobile.mov',
-            },
-          ],
+          name: '전체 페이지 시연',
+          vid: 'src/assets/ourCity/city_mobile.mov',
         },
       ],
     },
@@ -302,6 +268,27 @@ export const projectsData: Project[] = [
     dev: {
       start: '2023-04-05',
       end: '2023-04-07',
+    },
+    prod: {
+      isTeam: false,
+      desktop: [
+        {
+          name: '서비스 시연',
+          vid: 'src/assets/cityWeather/weather_desktop.mov',
+        },
+      ],
+      tablet: [
+        {
+          name: '서비스 시연',
+          vid: 'src/assets/cityWeather/weather_tablet.mov',
+        },
+      ],
+      mobile: [
+        {
+          name: '서비스 시연',
+          vid: 'src/assets/cityWeather/weather_mobile.mov',
+        },
+      ],
     },
     stack: ['React', 'TypeScript', 'Styled-components', 'React-Router'],
     thumbnail: 'src/assets/thumbnails/portfolio.png',
@@ -345,6 +332,27 @@ export const projectsData: Project[] = [
       'Styled-components',
       'React-Router',
     ],
+    prod: {
+      isTeam: false,
+      desktop: [
+        {
+          name: '서비스 시연',
+          vid: 'src/assets/cityWeather/weather_desktop.mov',
+        },
+      ],
+      tablet: [
+        {
+          name: '서비스 시연',
+          vid: 'src/assets/cityWeather/weather_tablet.mov',
+        },
+      ],
+      mobile: [
+        {
+          name: '서비스 시연',
+          vid: 'src/assets/cityWeather/weather_mobile.mov',
+        },
+      ],
+    },
     thumbnail: 'src/assets/thumbnails/stackOverflowClone.png',
   },
   {
@@ -376,33 +384,22 @@ export const projectsData: Project[] = [
     ],
     prod: {
       isTeam: false,
-      pages: [
+      desktop: [
         {
-          type: 'Desktop',
-          pageInfo: [
-            {
-              name: '서비스 시연',
-              vid: 'src/assets/cityWeather/weather_desktop.mov',
-            },
-          ],
+          name: '서비스 시연',
+          vid: 'src/assets/cityWeather/weather_desktop.mov',
         },
+      ],
+      tablet: [
         {
-          type: 'Tablet',
-          pageInfo: [
-            {
-              name: '서비스 시연',
-              vid: 'src/assets/cityWeather/weather_tablet.mov',
-            },
-          ],
+          name: '서비스 시연',
+          vid: 'src/assets/cityWeather/weather_tablet.mov',
         },
+      ],
+      mobile: [
         {
-          type: 'Mobile',
-          pageInfo: [
-            {
-              name: '서비스 시연',
-              vid: 'src/assets/cityWeather/weather_mobile.mov',
-            },
-          ],
+          name: '서비스 시연',
+          vid: 'src/assets/cityWeather/weather_mobile.mov',
         },
       ],
     },
