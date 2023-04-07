@@ -154,17 +154,19 @@ const ProjectModal = ({ project, setIsShowModal }: ProjectModalProps) => {
             <div className="project-pages">
               {pageData.map((data, index) => (
                 <div key={index} className="project-page-item">
-                  <div className="project-video">
-                    <h1>👉 {data.name}</h1>
-                    <video src={data.vid} controls />
-                    {data.vidDesc && (
-                      <ul>
-                        {data.vidDesc.split(',').map((desc, index) => (
-                          <li key={index}>▶️ {desc}</li>
-                        ))}
-                      </ul>
-                    )}
-                  </div>
+                  {data.vid !== undefined && (
+                    <div className="project-video">
+                      <h1>👉 {data.name}</h1>
+                      <video src={data.vid} controls />
+                      {data.vidDesc && (
+                        <ul>
+                          {data.vidDesc.split(',').map((desc, index) => (
+                            <li key={index}>▶️ {desc}</li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
+                  )}
                 </div>
               ))}
             </div>

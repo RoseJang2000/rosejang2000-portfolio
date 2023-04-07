@@ -93,59 +93,59 @@ export const projectsData: Project[] = [
       desktop: [
         {
           name: '메인 페이지',
-          vid: 'src/assets/partyPeople/Main/main_desktop.mov',
+          vid: '/videos/partyPeople/Main/main_desktop.mov',
         },
         {
           name: '대륙 선택 페이지',
-          vid: 'src/assets/partyPeople/ContinentSelect/continentSelect_desktop.mov',
+          vid: '/videos/partyPeople/ContinentSelect/continentSelect_desktop.mov',
         },
         {
           name: '동행글 리스트 페이지',
-          vid: 'src/assets/partyPeople/ContentList/contentList_desktop.mov',
+          vid: '/videos/partyPeople/ContentList/contentList_desktop.mov',
         },
         {
           name: '프로필 페이지',
-          vid: 'src/assets/partyPeople/Profile/profile_desktop.mov',
+          vid: '/videos/partyPeople/Profile/profile_desktop.mov',
         },
       ],
       tablet: [
         {
           name: '메인 페이지',
-          vid: 'src/assets/partyPeople/Main/main_tablet.mov',
+          vid: '/videos/partyPeople/Main/main_tablet.mov',
         },
         {
           name: '대륙 선택 페이지',
-          vid: 'src/assets/partyPeople/ContinentSelect/continentSelect_tablet.mov',
+          vid: '/videos/partyPeople/ContinentSelect/continentSelect_tablet.mov',
         },
         {
           name: '동행글 리스트 페이지',
-          vid: 'src/assets/partyPeople/ContentList/contentList_tablet.mov',
+          vid: '/videos/partyPeople/ContentList/contentList_tablet.mov',
         },
         {
           name: '프로필 페이지',
-          vid: 'src/assets/partyPeople/Profile/profile_tablet.mov',
+          vid: '/videos/partyPeople/Profile/profile_tablet.mov',
         },
       ],
       mobile: [
         {
           name: '메인 페이지',
-          vid: 'src/assets/partyPeople/Main/main_mobile.mov',
+          vid: '/videos/partyPeople/Main/main_mobile.mov',
         },
         {
           name: '대륙 선택 페이지',
-          vid: 'src/assets/partyPeople/ContinentSelect/continentSelect_mobile.mov',
+          vid: '/videos/partyPeople/ContinentSelect/continentSelect_mobile.mov',
         },
         {
           name: '동행글 리스트 페이지',
-          vid: 'src/assets/partyPeople/ContentList/contentList_mobile.mov',
+          vid: '/videos/partyPeople/ContentList/contentList_mobile.mov',
         },
         {
           name: '프로필 페이지',
-          vid: 'src/assets/partyPeople/Profile/profile_mobile.mov',
+          vid: '/videos/partyPeople/Profile/profile_mobile.mov',
         },
       ],
     },
-    thumbnail: 'src/assets/thumbnails/partyPeople.png',
+    thumbnail: '/images/partyPeople.png',
   },
   {
     title: '🎨 Color Aesthetics',
@@ -174,23 +174,23 @@ export const projectsData: Project[] = [
       desktop: [
         {
           name: '서비스 시연',
-          vid: 'src/assets/colorAesthetics/color_desktop.mov',
+          vid: '/videos/colorAesthetics/color_desktop.mov',
         },
       ],
       tablet: [
         {
           name: '서비스 시연',
-          vid: 'src/assets/colorAesthetics/color_tablet.mov',
+          vid: '/videos/colorAesthetics/color_tablet.mov',
         },
       ],
       mobile: [
         {
           name: '서비스 시연',
-          vid: 'src/assets/colorAesthetics/color_mobile.mov',
+          vid: '/videos/colorAesthetics/color_mobile.mov',
         },
       ],
     },
-    thumbnail: 'src/assets/thumbnails/colorAesthetics.png',
+    thumbnail: '/images/colorAesthetics.png',
   },
   {
     title: '⚽️ Our City',
@@ -228,7 +228,7 @@ export const projectsData: Project[] = [
       desktop: [
         {
           name: '서비스 시연',
-          vid: 'src/assets/ourCity/city_desktop.mov',
+          vid: '/videos/ourCity/city_desktop.mov',
           vidDesc:
             '0:00 ~ 0:07 : Home page,0:08 ~ 0:30 : Players page,0:31 ~ 0:44 : News page',
         },
@@ -236,7 +236,7 @@ export const projectsData: Project[] = [
       tablet: [
         {
           name: '서비스 시연',
-          vid: 'src/assets/ourCity/city_tablet.mov',
+          vid: '/videos/ourCity/city_tablet.mov',
           vidDesc:
             '0:00 ~ 0:08 : Home page,0:09 ~ 0:20 : Players page,0:21 ~ 0:30 : News page',
         },
@@ -244,13 +244,13 @@ export const projectsData: Project[] = [
       mobile: [
         {
           name: '서비스 시연',
-          vid: 'src/assets/ourCity/city_mobile.mov',
+          vid: '/videos/ourCity/city_mobile.mov',
           vidDesc:
             '0:00 ~ 0:04 : Home page,0:05 ~ 0:14 : Players page,0:15 ~ 0:23 : News page',
         },
       ],
     },
-    thumbnail: 'src/assets/thumbnails/ourCity.png',
+    thumbnail: '/images/ourCity.png',
   },
   {
     title: '👤 장장미 포트폴리오',
@@ -281,24 +281,24 @@ export const projectsData: Project[] = [
       desktop: [
         {
           name: '서비스 시연',
-          vid: 'src/assets/cityWeather/weather_desktop.mov',
+          vid: '/videos/cityWeather/weather_desktop.mov',
         },
       ],
       tablet: [
         {
           name: '서비스 시연',
-          vid: 'src/assets/cityWeather/weather_tablet.mov',
+          vid: '/videos/cityWeather/weather_tablet.mov',
         },
       ],
       mobile: [
         {
           name: '서비스 시연',
-          vid: 'src/assets/cityWeather/weather_mobile.mov',
+          vid: '/videos/cityWeather/weather_mobile.mov',
         },
       ],
     },
     stack: ['React', 'TypeScript', 'Styled-components', 'React-Router'],
-    thumbnail: 'src/assets/thumbnails/portfolio.png',
+    thumbnail: '/images/portfolio.png',
   },
   {
     title: '💬 Stack Overflow Clone',
@@ -344,23 +344,23 @@ export const projectsData: Project[] = [
       desktop: [
         {
           name: '서비스 시연',
-          vid: 'src/assets/cityWeather/weather_desktop.mov',
+          vid: '/videos/cityWeather/weather_desktop.mov',
         },
       ],
       tablet: [
         {
           name: '서비스 시연',
-          vid: 'src/assets/cityWeather/weather_tablet.mov',
+          vid: '/videos/cityWeather/weather_tablet.mov',
         },
       ],
       mobile: [
         {
           name: '서비스 시연',
-          vid: 'src/assets/cityWeather/weather_mobile.mov',
+          vid: '/videos/cityWeather/weather_mobile.mov',
         },
       ],
     },
-    thumbnail: 'src/assets/thumbnails/stackOverflowClone.png',
+    thumbnail: '/images/stackOverflowClone.png',
   },
   {
     title: '🌡 City Weather',
@@ -394,22 +394,22 @@ export const projectsData: Project[] = [
       desktop: [
         {
           name: '서비스 시연',
-          vid: 'src/assets/cityWeather/weather_desktop.mov',
+          vid: '/videos/cityWeather/weather_desktop.mov',
         },
       ],
       tablet: [
         {
           name: '서비스 시연',
-          vid: 'src/assets/cityWeather/weather_tablet.mov',
+          vid: '/videos/cityWeather/weather_tablet.mov',
         },
       ],
       mobile: [
         {
           name: '서비스 시연',
-          vid: 'src/assets/cityWeather/weather_mobile.mov',
+          vid: '/videos/cityWeather/weather_mobile.mov',
         },
       ],
     },
-    thumbnail: 'src/assets/thumbnails/cityWeather.png',
+    thumbnail: '/images/cityWeather.png',
   },
 ];
