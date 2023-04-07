@@ -36,8 +36,8 @@ const Header = ({ theme, setTheme }: HeaderProps) => {
       <div className="title">
         <img className="title-icon" src={blueHeart} />
         <Link to="/" className="title-text">
-          <h1>장장미&nbsp;</h1>
-          <h1>포트폴리오</h1>
+          <h1>Rose's&nbsp;</h1>
+          <h1>Portfolio</h1>
         </Link>
       </div>
       <NavList className={isMenuOpen ? 'open' : 'close'}>
@@ -68,7 +68,7 @@ const HeaderContainer = styled.header`
   position: fixed;
   top: 0;
   left: 0;
-  background-color: ${(props) => props.theme.colors.boxColor};
+  background-color: ${(props) => props.theme.colors.bgColor};
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -88,6 +88,9 @@ const HeaderContainer = styled.header`
     display: flex;
     position: relative;
     bottom: 0.1rem;
+    h1 {
+      color: ${(props) => props.theme.colors.pointColor};
+    }
   }
 
   @media screen and (max-width: 768px) {
@@ -154,7 +157,7 @@ const ThemeToggleButton = styled.div`
   width: 5rem;
   height: 2.5rem;
   border-radius: 2.5rem;
-  background-color: ${(props) => props.theme.colors.bgColor};
+  background-color: ${(props) => props.theme.colors.boxColor};
   color: ${(props) => props.theme.colors.modeColor};
   display: flex;
   align-items: center;
