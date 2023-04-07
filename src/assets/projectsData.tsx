@@ -32,6 +32,7 @@ interface ProdPage {
   name: string;
   img?: string;
   vid?: string;
+  vidDesc?: string;
 }
 
 export const projectsData: Project[] = [
@@ -39,7 +40,7 @@ export const projectsData: Project[] = [
     title: '🎉 Party People',
     desc: '여행 동행자 구하기 서비스',
     skillDesc: [
-      '캐러셀 슬라이드 구현',
+      '캐러셀 슬라이드 구현 (라이브러리: React-slick)',
       '스크롤 애니메이션 구현',
       'axios Interceptor를 이용한 토큰 만료 관리 및 재발급',
       'Intersection Observer를 이용한 무한스크롤 구현',
@@ -172,19 +173,19 @@ export const projectsData: Project[] = [
       isTeam: false,
       desktop: [
         {
-          name: '메인 페이지',
+          name: '서비스 시연',
           vid: 'src/assets/colorAesthetics/color_desktop.mov',
         },
       ],
       tablet: [
         {
-          name: '메인 페이지',
+          name: '서비스 시연',
           vid: 'src/assets/colorAesthetics/color_tablet.mov',
         },
       ],
       mobile: [
         {
-          name: '메인 페이지',
+          name: '서비스 시연',
           vid: 'src/assets/colorAesthetics/color_mobile.mov',
         },
       ],
@@ -195,7 +196,7 @@ export const projectsData: Project[] = [
     title: '⚽️ Our City',
     desc: '맨체스터 시티 정보 사이트',
     skillDesc: [
-      '캐러셀 슬라이드 구현',
+      '캐러셀 슬라이드 구현 (라이브러리 X)',
       'Google Custom Search API 사용',
       '더보기 버튼 형식의 데이터 불러오기 구현',
       '반응형 웹 구현',
@@ -226,20 +227,26 @@ export const projectsData: Project[] = [
       isTeam: false,
       desktop: [
         {
-          name: '전체 페이지 시연',
+          name: '서비스 시연',
           vid: 'src/assets/ourCity/city_desktop.mov',
+          vidDesc:
+            '0:00 ~ 0:07 : Home page,0:08 ~ 0:30 : Players page,0:31 ~ 0:44 : News page',
         },
       ],
       tablet: [
         {
-          name: '전체 페이지 시연',
+          name: '서비스 시연',
           vid: 'src/assets/ourCity/city_tablet.mov',
+          vidDesc:
+            '0:00 ~ 0:08 : Home page,0:09 ~ 0:20 : Players page,0:21 ~ 0:30 : News page',
         },
       ],
       mobile: [
         {
-          name: '전체 페이지 시연',
+          name: '서비스 시연',
           vid: 'src/assets/ourCity/city_mobile.mov',
+          vidDesc:
+            '0:00 ~ 0:04 : Home page,0:05 ~ 0:14 : Players page,0:15 ~ 0:23 : News page',
         },
       ],
     },
