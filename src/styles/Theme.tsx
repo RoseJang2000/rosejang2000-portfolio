@@ -27,12 +27,12 @@ export const lightTheme: Theme = {
 export const darkTheme: Theme = {
   bgColor: '#17202A',
   titleColor: '#fff',
-  descColor: '#8899A6',
+  descColor: '#a2b3c1',
   accentColor: '#fff',
   boxColor: '#25303B',
   boxColor2: '#1C2733',
   pointColor: '#3772FF',
-  lineColor: '#8B98A5',
+  lineColor: '#4e545a',
   modeColor: '#f4dd31',
   commandColor: '#05A3A6',
 };
