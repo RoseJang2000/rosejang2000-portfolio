@@ -47,123 +47,129 @@ const ProjectModal = ({ project, setIsShowModal }: ProjectModalProps) => {
     <>
       <ModalBackground onClick={handleCloseModal}></ModalBackground>
       <ModalContainer>
-        <CloseButton1 onClick={handleCloseModal}>
-          <span className="icon">
-            <GoX />
-          </span>
-        </CloseButton1>
-        <CloseButton2 onClick={handleCloseModal}>
-          <span className="icon">
-            <RiSubtractLine />
-          </span>
-        </CloseButton2>
-        <LeftSection>
-          <img className="project-img" src={project.thumbnail} />
-          <Information>
-            <h1 className="project-title">{project.title}</h1>
-            <p className="project-desc">{project.desc}</p>
-          </Information>
-          <Information>
-            <h1>📌 바로가기 링크</h1>
-            <ul className="project-links-list">
-              {project.links.map((link, index) => (
-                <li key={index} className="project-links-item">
-                  <a href={link.url} target="_blank" rel="noopener noreferrer">
-                    📎&nbsp;&nbsp;{link.name} 링크 바로가기
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </Information>
-          {project.team && (
-            <>
-              <Information>
-                <h1>👨‍👩‍👧‍👦 팀 정보</h1>
-                <ul className="project-team-info">
-                  <li>Frontend: {project.team.front}명</li>
-                  <li>Backend: {project.team.back}명</li>
-                </ul>
-              </Information>
-              <Information>
-                <h1>🙋‍♀️ 프로젝트 내 맡은 역할</h1>
-                <ul className="project-team-role">
-                  {project.team.myRole.map((role, index) => (
-                    <li key={index}>
-                      <span>▶️</span>
-                      {role}
-                    </li>
-                  ))}
-                </ul>
-              </Information>
-            </>
-          )}
-          <Information>
-            <h1>🧩 사용 기술</h1>
-            <ul>
-              {project.skillDesc.map((skill, index) => (
-                <li key={index}>
-                  <span>▶️</span>
-                  {skill}
-                </li>
-              ))}
-            </ul>
-          </Information>
-          {project.dev && (
+        <div className="inner">
+          <CloseButton1 onClick={handleCloseModal}>
+            <span className="icon">
+              <GoX />
+            </span>
+          </CloseButton1>
+          <CloseButton2 onClick={handleCloseModal}>
+            <span className="icon">
+              <RiSubtractLine />
+            </span>
+          </CloseButton2>
+          <LeftSection>
+            <img className="project-img" src={project.thumbnail} />
             <Information>
-              <h1>🕒 개발 기간</h1>
-              <p>
-                {project.dev.start} ~ {project.dev.end}
-              </p>
+              <h1 className="project-title">{project.title}</h1>
+              <p className="project-desc">{project.desc}</p>
             </Information>
-          )}
-          <ProjectStacks>
-            <h1 className="project-stack-title">🛠 사용 스택</h1>
-            <ul className="project-stack-list">
-              {project.stack.map((stack, index) => (
-                <li className="project-stack-item" key={index}>
-                  {stack}
-                </li>
-              ))}
-            </ul>
-          </ProjectStacks>
-        </LeftSection>
-        <RightSection>
-          {project.prod.isTeam ? (
-            <h1 className="title">프로젝트 내 맡은 페이지 화면</h1>
-          ) : (
-            <h1 className="title">구현 완료 페이지 화면</h1>
-          )}
-          <div className="tabs">
-            {tabs.map((tab, index) => (
-              <div
-                key={index}
-                className={`tab ${
-                  index === currentTab.index ? 'active' : undefined
-                }`}
-                onClick={() => handleClickab(index, tab)}
-              >
-                {tab}
-              </div>
-            ))}
-          </div>
-          <div className="project-pages">
-            {pageData.map((data, index) => (
-              <div key={index} className="project-page-item">
-                <div className="project-video">
-                  <h1>👉 {data.name}</h1>
-                  <video src={data.vid} controls />
-                  {data.vidDesc && (
-                    <ul>
-                      {data.vidDesc.split(',').map((desc, index) => (
-                        <li key={index}>▶️ {desc}</li>
-                      ))}
-                    </ul>
-                  )}
+            <Information>
+              <h1>📌 바로가기 링크</h1>
+              <ul className="project-links-list">
+                {project.links.map((link, index) => (
+                  <li key={index} className="project-links-item">
+                    <a
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      📎&nbsp;&nbsp;{link.name} 링크 바로가기
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </Information>
+            {project.team && (
+              <>
+                <Information>
+                  <h1>👨‍👩‍👧‍👦 팀 정보</h1>
+                  <ul className="project-team-info">
+                    <li>Frontend: {project.team.front}명</li>
+                    <li>Backend: {project.team.back}명</li>
+                  </ul>
+                </Information>
+                <Information>
+                  <h1>🙋‍♀️ 프로젝트 내 맡은 역할</h1>
+                  <ul className="project-team-role">
+                    {project.team.myRole.map((role, index) => (
+                      <li key={index}>
+                        <span>▶️</span>
+                        {role}
+                      </li>
+                    ))}
+                  </ul>
+                </Information>
+              </>
+            )}
+            <Information>
+              <h1>🧩 사용 기술</h1>
+              <ul>
+                {project.skillDesc.map((skill, index) => (
+                  <li key={index}>
+                    <span>▶️</span>
+                    {skill}
+                  </li>
+                ))}
+              </ul>
+            </Information>
+            {project.dev && (
+              <Information>
+                <h1>🕒 개발 기간</h1>
+                <p>
+                  {project.dev.start} ~ {project.dev.end}
+                </p>
+              </Information>
+            )}
+            <ProjectStacks>
+              <h1 className="project-stack-title">🛠 사용 스택</h1>
+              <ul className="project-stack-list">
+                {project.stack.map((stack, index) => (
+                  <li className="project-stack-item" key={index}>
+                    {stack}
+                  </li>
+                ))}
+              </ul>
+            </ProjectStacks>
+          </LeftSection>
+          <RightSection>
+            {project.prod.isTeam ? (
+              <h1 className="title">프로젝트 내 맡은 페이지 화면</h1>
+            ) : (
+              <h1 className="title">구현 완료 페이지 화면</h1>
+            )}
+            <div className="tabs">
+              {tabs.map((tab, index) => (
+                <div
+                  key={index}
+                  className={`tab ${
+                    index === currentTab.index ? 'active' : undefined
+                  }`}
+                  onClick={() => handleClickab(index, tab)}
+                >
+                  {tab}
                 </div>
-              </div>
-            ))}
-          </div>
-        </RightSection>
+              ))}
+            </div>
+            <div className="project-pages">
+              {pageData.map((data, index) => (
+                <div key={index} className="project-page-item">
+                  <div className="project-video">
+                    <h1>👉 {data.name}</h1>
+                    <video src={data.vid} controls />
+                    {data.vidDesc && (
+                      <ul>
+                        {data.vidDesc.split(',').map((desc, index) => (
+                          <li key={index}>▶️ {desc}</li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </RightSection>
+        </div>
       </ModalContainer>
     </>
   );
@@ -191,8 +197,14 @@ const ModalContainer = styled.div`
   transform: translate(-50%, -50%);
   z-index: 200;
   padding: 3rem 1rem 1rem 1rem;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  .inner {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    overflow: auto;
+  }
+  .inner,
   section {
     ::-webkit-scrollbar {
       width: 5px;
@@ -206,17 +218,10 @@ const ModalContainer = styled.div`
       border-radius: 10px;
     }
   }
-  @media screen and (max-width: 1280px) {
-    background-color: gray;
-  }
-  @media screen and (max-width: 992px) {
-    background-color: lightcoral;
-  }
   @media screen and (max-width: 768px) {
-    background-color: lightpink;
-  }
-  @media screen and (max-width: 576px) {
-    background-color: lightgreen;
+    .inner {
+      grid-template-columns: 1fr;
+    }
   }
 `;
 
@@ -234,6 +239,11 @@ const LeftSection = styled.section`
     object-fit: cover;
     border-radius: 1rem;
     border: 1px solid ${(props) => props.theme.colors.lineColor};
+  }
+  @media screen and (max-width: 768px) {
+    height: fit-content;
+    overflow: visible;
+    border: none;
   }
 `;
 
@@ -297,6 +307,13 @@ const RightSection = styled.section`
     video {
       width: 100%;
     }
+  }
+  @media screen and (max-width: 768px) {
+    height: fit-content;
+    overflow: visible;
+    border-top: 1px solid ${(props) => props.theme.colors.lineColor};
+    margin-top: 2rem;
+    padding-top: 2rem;
   }
 `;
 
