@@ -92,55 +92,55 @@ export const projectsData: Project[] = [
       desktop: [
         {
           name: '메인 페이지',
-          vid: '/videos/partyPeople/Main/main_desktop.mov',
+          vid: 'https://youtu.be/rp8r1mLOY74',
         },
         {
           name: '대륙 선택 페이지',
-          vid: '/videos/partyPeople/ContinentSelect/continentSelect_desktop.mov',
+          vid: 'https://youtu.be/rT_c0PzQmPQ',
         },
         {
           name: '동행글 리스트 페이지',
-          vid: '/videos/partyPeople/ContentList/contentList_desktop.mov',
+          vid: 'https://youtu.be/IEy3d72Rnug',
         },
         {
           name: '프로필 페이지',
-          vid: '/videos/partyPeople/Profile/profile_desktop.mov',
+          vid: 'https://youtu.be/hI7eLQlPilU',
         },
       ],
       tablet: [
         {
           name: '메인 페이지',
-          vid: '/videos/partyPeople/Main/main_tablet.mov',
+          vid: 'https://youtube.com/shorts/D_JsBL4N_4Y?feature=share',
         },
         {
           name: '대륙 선택 페이지',
-          vid: '/videos/partyPeople/ContinentSelect/continentSelect_tablet.mov',
+          vid: 'https://youtube.com/shorts/88YdHQVpaU0?feature=share',
         },
         {
           name: '동행글 리스트 페이지',
-          vid: '/videos/partyPeople/ContentList/contentList_tablet.mov',
+          vid: 'https://youtube.com/shorts/0d7q2Lvfiu8?feature=share',
         },
         {
           name: '프로필 페이지',
-          vid: '/videos/partyPeople/Profile/profile_tablet.mov',
+          vid: 'https://youtube.com/shorts/pYIjzj44pBg?feature=share',
         },
       ],
       mobile: [
         {
           name: '메인 페이지',
-          vid: '/videos/partyPeople/Main/main_mobile.mov',
+          vid: 'https://youtube.com/shorts/5jpRw1slyww?feature=share',
         },
         {
           name: '대륙 선택 페이지',
-          vid: '/videos/partyPeople/ContinentSelect/continentSelect_mobile.mov',
+          vid: 'https://youtube.com/shorts/nHyguTpfpIc?feature=share',
         },
         {
           name: '동행글 리스트 페이지',
-          vid: '/videos/partyPeople/ContentList/contentList_mobile.mov',
+          vid: 'https://youtube.com/shorts/SU67dX2dU88?feature=share',
         },
         {
           name: '프로필 페이지',
-          vid: '/videos/partyPeople/Profile/profile_mobile.mov',
+          vid: 'https://youtube.com/shorts/mlksjr5q26M?feature=share',
         },
       ],
     },
@@ -172,19 +172,19 @@ export const projectsData: Project[] = [
       desktop: [
         {
           name: '서비스 시연',
-          vid: '/videos/colorAesthetics/color_desktop.mov',
+          vid: 'https://youtu.be/kcMbnqpx7ho',
         },
       ],
       tablet: [
         {
           name: '서비스 시연',
-          vid: '/videos/colorAesthetics/color_tablet.mov',
+          vid: 'https://youtube.com/shorts/ee8iCfevFRk?feature=share',
         },
       ],
       mobile: [
         {
           name: '서비스 시연',
-          vid: '/videos/colorAesthetics/color_mobile.mov',
+          vid: 'https://youtube.com/shorts/w2ovJeNBpF8?feature=share',
         },
       ],
     },
@@ -225,7 +225,7 @@ export const projectsData: Project[] = [
       desktop: [
         {
           name: '서비스 시연',
-          vid: '/videos/ourCity/city_desktop.mov',
+          vid: 'https://youtu.be/3OUVOEkAos0',
           vidDesc:
             '0:00 ~ 0:07 : Home page,0:08 ~ 0:30 : Players page,0:31 ~ 0:44 : News page',
         },
@@ -233,7 +233,7 @@ export const projectsData: Project[] = [
       tablet: [
         {
           name: '서비스 시연',
-          vid: '/videos/ourCity/city_tablet.mov',
+          vid: 'https://youtube.com/shorts/-ECw6RWe134',
           vidDesc:
             '0:00 ~ 0:08 : Home page,0:09 ~ 0:20 : Players page,0:21 ~ 0:30 : News page',
         },
@@ -241,7 +241,7 @@ export const projectsData: Project[] = [
       mobile: [
         {
           name: '서비스 시연',
-          vid: '/videos/ourCity/city_mobile.mov',
+          vid: 'https://youtube.com/shorts/-Yk_ojfmi-s?feature=share',
           vidDesc:
             '0:00 ~ 0:04 : Home page,0:05 ~ 0:14 : Players page,0:15 ~ 0:23 : News page',
         },
@@ -249,7 +249,53 @@ export const projectsData: Project[] = [
     },
   },
   {
-    title: '👤 Portfolio',
+    title: '👤 Profile',
+    desc: '프로필 웹사이트',
+    skillDesc: [
+      'React Draggable 라이브러리를 이용한 움직이는 컴포넌트',
+      're-resizable 라이브러리를 이용한 사이즈 조정 가능한 컴포넌트',
+      '조건문을 이용한 터미널 기능 구현',
+      'useRef를 이용한 input autoFocus 구현',
+      'useRef를 이용한 터미널 컴포넌트 autoScroll 구현',
+      '반응형 웹 구현',
+    ],
+    team: null,
+    links: [
+      {
+        name: '배포',
+        url: 'https://rosejang-profile.vercel.app/',
+      },
+      {
+        name: '깃허브',
+        url: 'https://github.com/RoseJang2000/rosejang-profile',
+      },
+    ],
+    dev: null,
+    stack: ['React', 'TypeScript', 'Styled-components'],
+    prod: {
+      isTeam: false,
+      desktop: [
+        {
+          name: '서비스 시연',
+          vid: 'https://youtu.be/geNqPfvIOt4',
+        },
+      ],
+      tablet: [
+        {
+          name: '서비스 시연',
+          vid: 'https://youtube.com/shorts/0jvBQkl_1cg?feature=share',
+        },
+      ],
+      mobile: [
+        {
+          name: '서비스 시연',
+          vid: 'https://youtube.com/shorts/we0snvL9TrI?feature=share',
+        },
+      ],
+    },
+  },
+  {
+    title: '💻 Portfolio',
     desc: '포트폴리오 웹사이트',
     skillDesc: [
       'Vite를 이용한 프로젝트 개발환경 구축',
@@ -277,85 +323,85 @@ export const projectsData: Project[] = [
       desktop: [
         {
           name: '서비스 시연',
-          vid: '/videos/cityWeather/weather_desktop.mov',
+          vid: 'https://youtu.be/0xR4Pep6Fbk',
         },
       ],
       tablet: [
         {
           name: '서비스 시연',
-          vid: '/videos/cityWeather/weather_tablet.mov',
+          vid: 'https://youtube.com/shorts/QwcLa66THBc?feature=share',
         },
       ],
       mobile: [
         {
           name: '서비스 시연',
-          vid: '/videos/cityWeather/weather_mobile.mov',
+          vid: 'https://youtube.com/shorts/XXZcGhxBFv0',
         },
       ],
     },
     stack: ['React', 'TypeScript', 'Styled-components', 'React-Router'],
   },
-  {
-    title: '💬 Stack Overflow Clone',
-    desc: 'Stack Overflow 서비스 클론',
-    skillDesc: ['toast UI editor 사용', '반응형 웹 구현'],
-    team: {
-      front: 3,
-      back: 3,
-      myRole: [
-        '메인 (질문 리스트)페이지 스타일링 & 기능 구현',
-        '질문 & 답변 조회 페이지 스타일링 & 기능 구현',
-        '질문 수정 페이지 스타일링 & 기능 구현',
-        'Tags 페이지 스타일링 & 기능 구현',
-      ],
-    },
-    links: [
-      {
-        name: '배포',
-        url: 'http://pre-project-021.s3-website.ap-northeast-2.amazonaws.com/',
-      },
-      {
-        name: '깃허브',
-        url: 'https://github.com/codestates-seb/seb42_pre_021',
-      },
-      {
-        name: '노션',
-        url: 'https://sleepyjoyy.notion.site/PreProject-819f277290d54daa9d52bf7d2a4531f6',
-      },
-    ],
-    dev: {
-      start: '2023-02-13',
-      end: '2023-02-28',
-    },
-    stack: [
-      'React',
-      'JavaScript',
-      'Axios',
-      'Styled-components',
-      'React-Router',
-    ],
-    prod: {
-      isTeam: false,
-      desktop: [
-        {
-          name: '서비스 시연',
-          vid: '/videos/cityWeather/weather_desktop.mov',
-        },
-      ],
-      tablet: [
-        {
-          name: '서비스 시연',
-          vid: '/videos/cityWeather/weather_tablet.mov',
-        },
-      ],
-      mobile: [
-        {
-          name: '서비스 시연',
-          vid: '/videos/cityWeather/weather_mobile.mov',
-        },
-      ],
-    },
-  },
+  // {
+  //   title: '💬 Stack Overflow Clone',
+  //   desc: 'Stack Overflow 서비스 클론',
+  //   skillDesc: ['toast UI editor 사용', '반응형 웹 구현'],
+  //   team: {
+  //     front: 3,
+  //     back: 3,
+  //     myRole: [
+  //       '메인 (질문 리스트)페이지 스타일링 & 기능 구현',
+  //       '질문 & 답변 조회 페이지 스타일링 & 기능 구현',
+  //       '질문 수정 페이지 스타일링 & 기능 구현',
+  //       'Tags 페이지 스타일링 & 기능 구현',
+  //     ],
+  //   },
+  //   links: [
+  //     {
+  //       name: '배포',
+  //       url: 'http://pre-project-021.s3-website.ap-northeast-2.amazonaws.com/',
+  //     },
+  //     {
+  //       name: '깃허브',
+  //       url: 'https://github.com/codestates-seb/seb42_pre_021',
+  //     },
+  //     {
+  //       name: '노션',
+  //       url: 'https://sleepyjoyy.notion.site/PreProject-819f277290d54daa9d52bf7d2a4531f6',
+  //     },
+  //   ],
+  //   dev: {
+  //     start: '2023-02-13',
+  //     end: '2023-02-28',
+  //   },
+  //   stack: [
+  //     'React',
+  //     'JavaScript',
+  //     'Axios',
+  //     'Styled-components',
+  //     'React-Router',
+  //   ],
+  //   prod: {
+  //     isTeam: false,
+  //     desktop: [
+  //       {
+  //         name: '서비스 시연',
+  //         vid: '/videos/cityWeather/weather_desktop.mov',
+  //       },
+  //     ],
+  //     tablet: [
+  //       {
+  //         name: '서비스 시연',
+  //         vid: '/videos/cityWeather/weather_tablet.mov',
+  //       },
+  //     ],
+  //     mobile: [
+  //       {
+  //         name: '서비스 시연',
+  //         vid: '/videos/cityWeather/weather_mobile.mov',
+  //       },
+  //     ],
+  //   },
+  // },
   {
     title: '🌡 City Weather',
     desc: '나라/지역 날씨 검색 사이트',
@@ -388,19 +434,19 @@ export const projectsData: Project[] = [
       desktop: [
         {
           name: '서비스 시연',
-          vid: '/videos/cityWeather/weather_desktop.mov',
+          vid: 'https://youtu.be/k7jbFXVR4Ms',
         },
       ],
       tablet: [
         {
           name: '서비스 시연',
-          vid: '/videos/cityWeather/weather_tablet.mov',
+          vid: 'https://youtube.com/shorts/4ZRcJhwlFDE?feature=share',
         },
       ],
       mobile: [
         {
           name: '서비스 시연',
-          vid: '/videos/cityWeather/weather_mobile.mov',
+          vid: 'https://youtube.com/shorts/aZ-6C3oqOFQ?feature=share',
         },
       ],
     },
