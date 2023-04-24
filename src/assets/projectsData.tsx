@@ -162,7 +162,7 @@ export const projectsData: Project[] = [
       },
       {
         name: '깃허브',
-        url: 'https://github.com/codestates-seb/seb42_main_008',
+        url: 'https://github.com/RoseJang2000/color-image-search',
       },
     ],
     dev: null,
@@ -202,11 +202,11 @@ export const projectsData: Project[] = [
     links: [
       {
         name: '배포',
-        url: 'https://rosejang2000.github.io/color-image-search/',
+        url: 'https://man-city-web.vercel.app/',
       },
       {
         name: '깃허브',
-        url: 'https://github.com/codestates-seb/seb42_main_008',
+        url: 'https://github.com/RoseJang2000/man-city-web',
       },
     ],
     dev: {
@@ -368,11 +368,11 @@ export const projectsData: Project[] = [
     links: [
       {
         name: '배포',
-        url: 'https://rosejang2000.github.io/color-image-search/',
+        url: 'https://rosejang2000.github.io/city-weather-app/',
       },
       {
         name: '깃허브',
-        url: 'https://github.com/codestates-seb/seb42_main_008',
+        url: 'https://github.com/RoseJang2000/city-weather-app',
       },
     ],
     dev: null,

@@ -1,5 +1,6 @@
 import { AiFillBulb, AiFillGithub, AiFillMail } from 'react-icons/ai';
 import { RxNotionLogo } from 'react-icons/rx';
+import { RiProfileFill } from 'react-icons/ri';
 import styled from 'styled-components';
 
 const ContactMe = () => {
@@ -42,11 +43,15 @@ const ContactMe = () => {
         </a>
       </SocialItem>
       <SocialItem>
-        <a href="/" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://rosejang-profile.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <div className="icon">
-            <RxNotionLogo />
+            <RiProfileFill />
           </div>
-          Notion
+          Profile
         </a>
       </SocialItem>
     </ContactMeContainer>
