@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { ProjectStacks } from './ProjectArticle';
 import { GoX } from 'react-icons/go';
 import { RiSubtractLine } from 'react-icons/ri';
+import ReactPlayer from 'react-player';
 
 interface ProjectModalProps {
   project: Project;
@@ -172,7 +173,12 @@ const ProjectModal = ({
                   {data.vid !== undefined && (
                     <div className="project-video">
                       <h1>👉 {data.name}</h1>
-                      <video src={data.vid} controls />
+                      <ReactPlayer
+                        url={data.vid}
+                        width="100%"
+                        controls={true}
+                        muted={true}
+                      />
                       {data.vidDesc && (
                         <ul>
                           {data.vidDesc.split(',').map((desc, index) => (
@@ -321,6 +327,7 @@ const RightSection = styled.section`
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    width: 100%;
   }
   .project-page-item {
     width: 100%;
@@ -330,6 +337,9 @@ const RightSection = styled.section`
     video {
       width: 100%;
     }
+  }
+  .project-video {
+    width: 100%;
   }
   @media screen and (max-width: 768px) {
     height: fit-content;
