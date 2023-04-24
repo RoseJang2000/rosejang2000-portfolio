@@ -295,67 +295,67 @@ export const projectsData: Project[] = [
     },
     stack: ['React', 'TypeScript', 'Styled-components', 'React-Router'],
   },
-  {
-    title: '💬 Stack Overflow Clone',
-    desc: 'Stack Overflow 서비스 클론',
-    skillDesc: ['toast UI editor 사용', '반응형 웹 구현'],
-    team: {
-      front: 3,
-      back: 3,
-      myRole: [
-        '메인 (질문 리스트)페이지 스타일링 & 기능 구현',
-        '질문 & 답변 조회 페이지 스타일링 & 기능 구현',
-        '질문 수정 페이지 스타일링 & 기능 구현',
-        'Tags 페이지 스타일링 & 기능 구현',
-      ],
-    },
-    links: [
-      {
-        name: '배포',
-        url: 'http://pre-project-021.s3-website.ap-northeast-2.amazonaws.com/',
-      },
-      {
-        name: '깃허브',
-        url: 'https://github.com/codestates-seb/seb42_pre_021',
-      },
-      {
-        name: '노션',
-        url: 'https://sleepyjoyy.notion.site/PreProject-819f277290d54daa9d52bf7d2a4531f6',
-      },
-    ],
-    dev: {
-      start: '2023-02-13',
-      end: '2023-02-28',
-    },
-    stack: [
-      'React',
-      'JavaScript',
-      'Axios',
-      'Styled-components',
-      'React-Router',
-    ],
-    prod: {
-      isTeam: false,
-      desktop: [
-        {
-          name: '서비스 시연',
-          vid: '/videos/cityWeather/weather_desktop.mov',
-        },
-      ],
-      tablet: [
-        {
-          name: '서비스 시연',
-          vid: '/videos/cityWeather/weather_tablet.mov',
-        },
-      ],
-      mobile: [
-        {
-          name: '서비스 시연',
-          vid: '/videos/cityWeather/weather_mobile.mov',
-        },
-      ],
-    },
-  },
+  // {
+  //   title: '💬 Stack Overflow Clone',
+  //   desc: 'Stack Overflow 서비스 클론',
+  //   skillDesc: ['toast UI editor 사용', '반응형 웹 구현'],
+  //   team: {
+  //     front: 3,
+  //     back: 3,
+  //     myRole: [
+  //       '메인 (질문 리스트)페이지 스타일링 & 기능 구현',
+  //       '질문 & 답변 조회 페이지 스타일링 & 기능 구현',
+  //       '질문 수정 페이지 스타일링 & 기능 구현',
+  //       'Tags 페이지 스타일링 & 기능 구현',
+  //     ],
+  //   },
+  //   links: [
+  //     {
+  //       name: '배포',
+  //       url: 'http://pre-project-021.s3-website.ap-northeast-2.amazonaws.com/',
+  //     },
+  //     {
+  //       name: '깃허브',
+  //       url: 'https://github.com/codestates-seb/seb42_pre_021',
+  //     },
+  //     {
+  //       name: '노션',
+  //       url: 'https://sleepyjoyy.notion.site/PreProject-819f277290d54daa9d52bf7d2a4531f6',
+  //     },
+  //   ],
+  //   dev: {
+  //     start: '2023-02-13',
+  //     end: '2023-02-28',
+  //   },
+  //   stack: [
+  //     'React',
+  //     'JavaScript',
+  //     'Axios',
+  //     'Styled-components',
+  //     'React-Router',
+  //   ],
+  //   prod: {
+  //     isTeam: false,
+  //     desktop: [
+  //       {
+  //         name: '서비스 시연',
+  //         vid: '/videos/cityWeather/weather_desktop.mov',
+  //       },
+  //     ],
+  //     tablet: [
+  //       {
+  //         name: '서비스 시연',
+  //         vid: '/videos/cityWeather/weather_tablet.mov',
+  //       },
+  //     ],
+  //     mobile: [
+  //       {
+  //         name: '서비스 시연',
+  //         vid: '/videos/cityWeather/weather_mobile.mov',
+  //       },
+  //     ],
+  //   },
+  // },
   {
     title: '🌡 City Weather',
     desc: '나라/지역 날씨 검색 사이트',
