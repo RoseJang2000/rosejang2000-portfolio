@@ -18,17 +18,15 @@ const Home = () => {
           <h2 className="head-second">Front-end Developer</h2>
           <h1 className="head-first">프론트엔드 개발자 장장미</h1>
           <p className="head-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-            iste quia reprehenderit excepturi optio ducimus adipisci nemo facere
-            repudiandae iusto eveniet nam, error dolor blanditiis alias
-            similique facilis vel labore?
+            ❤️ 안녕하세요! 꾸준히 호기심을 가지는 개발자 장장미입니다.
           </p>
         </div>
         <div className="head-img">
-          <img
-            src="https://bioritmefestival.org/wp-content/uploads/2017/11/img-test.png"
-            alt="test"
-          />
+          <picture>
+            <source srcSet={`/images/myImg.avif`} type="image/avif" />
+            <source srcSet={`/images/myImg.webp`} type="image/webp" />
+            <img src={`/images/myImg.JPG`} />
+          </picture>
         </div>
       </div>
       <h2 className="category-title">😄 About me</h2>
