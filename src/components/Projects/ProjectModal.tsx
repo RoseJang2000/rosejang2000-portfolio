@@ -173,7 +173,12 @@ const ProjectModal = ({
                   {data.vid !== undefined && (
                     <div className="project-video">
                       <h1>👉 {data.name}</h1>
-                      <ReactPlayer url={data.vid} width="100%" />
+                      <ReactPlayer
+                        url={data.vid}
+                        width="100%"
+                        controls={true}
+                        muted={true}
+                      />
                       {data.vidDesc && (
                         <ul>
                           {data.vidDesc.split(',').map((desc, index) => (
