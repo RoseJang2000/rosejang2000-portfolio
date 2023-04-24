@@ -33,7 +33,7 @@ const Home = () => {
       </div>
       <h2 className="category-title">😄 About me</h2>
       <AboutMe />
-      <h2 className="category-title">💌 Contact me</h2>
+      <h2 className="category-title">💌 Connnect with me!</h2>
       <ContactMe />
       <div className="buttons">
         <Button onClick={() => handleClickButton('projects')}>
