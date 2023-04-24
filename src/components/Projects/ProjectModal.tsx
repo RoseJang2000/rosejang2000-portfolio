@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import { ProjectStacks } from './ProjectArticle';
 import { GoX } from 'react-icons/go';
 import { RiSubtractLine } from 'react-icons/ri';
-import ReactPlayer from 'react-player';
 
 interface ProjectModalProps {
   project: Project;
@@ -173,11 +172,13 @@ const ProjectModal = ({
                   {data.vid !== undefined && (
                     <div className="project-video">
                       <h1>👉 {data.name}</h1>
-                      <ReactPlayer
-                        url={data.vid}
-                        width="100%"
-                        controls={true}
-                        muted={true}
+                      <iframe
+                        width={'100%'}
+                        height={400}
+                        src={`https://www.youtube.com/embed/${data.vid}`}
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        style={{ border: 'none' }}
                       />
                       {data.vidDesc && (
                         <ul>
