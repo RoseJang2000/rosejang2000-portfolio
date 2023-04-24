@@ -12,20 +12,27 @@ const AboutMe = () => {
       <div className="screen">
         <p className="command">&gt; cat README.md</p>
         <p className="response">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
-          distinctio temporibus quibusdam tenetur illum. Dicta ut non ducimus
-          error debitis saepe cumque nobis porro blanditiis autem. Porro,
-          molestias cupiditate. Veniam.
+          &nbsp;평소 웹 사이트들을 이용하며 흥미롭게 경험한 디자인/기능들을
+          프로젝트 내에서 활용해보는 것을 즐깁니다.
+          <br />
+          &nbsp;웹 사이트/서비스들을 이용할 때 다양한 기능을 어떻게 구현하는지에
+          대한 궁금함을 가지고 공부해보려 노력합니다.
         </p>
         <p className="command">&gt; cat MORE.md</p>
         <p className="response">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
-          distinctio temporibus quibusdam tenetur illum.
+          &nbsp;풀리지 않는 코드나 문제가 있다면 서치와 다른 팀원과의 소통을
+          통해 공유하며 알아보고, 해결될 때 까지 코드를 디버깅하는 과정을
+          즐깁니다.
+          <br />
+          &nbsp;한 줄을 작성하더라도 내가 작성하는 코드에 항상 흥미를 가지고
+          작업합니다.
+          <br />
+          &nbsp;코드/서비스 등을 팀원들과 공유하고 꾸준히 함께 피드백 해나가는
+          과정을 가지고자 노력합니다.
         </p>
         <p className="command">&gt; ls programming skills</p>
         <p className="response">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
-          distinctio temporibus quibusdam tenetur illum.
+          Javascript React HTML CSS TypeScript Git Github
         </p>
         <p className="command">
           &gt; <span className="cursor"></span>
