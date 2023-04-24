@@ -280,6 +280,9 @@ const Information = styled.div`
   p {
     margin-left: 1rem;
   }
+  .project-links-item {
+    text-decoration: underline;
+  }
 `;
 
 const RightSection = styled.section`
