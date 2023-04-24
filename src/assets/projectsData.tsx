@@ -249,7 +249,53 @@ export const projectsData: Project[] = [
     },
   },
   {
-    title: '👤 Portfolio',
+    title: '👤 Profile',
+    desc: '프로필 웹사이트',
+    skillDesc: [
+      'React Draggable 라이브러리를 이용한 움직이는 컴포넌트',
+      're-resizable 라이브러리를 이용한 사이즈 조정 가능한 컴포넌트',
+      '조건문을 이용한 터미널 기능 구현',
+      'useRef를 이용한 input autoFocus 구현',
+      'useRef를 이용한 터미널 컴포넌트 autoScroll 구현',
+      '반응형 웹 구현',
+    ],
+    team: null,
+    links: [
+      {
+        name: '배포',
+        url: 'https://rosejang-profile.vercel.app/',
+      },
+      {
+        name: '깃허브',
+        url: 'https://github.com/RoseJang2000/rosejang-profile',
+      },
+    ],
+    dev: null,
+    stack: ['React', 'TypeScript', 'Styled-components'],
+    prod: {
+      isTeam: false,
+      desktop: [
+        {
+          name: '서비스 시연',
+          vid: 'https://youtu.be/geNqPfvIOt4',
+        },
+      ],
+      tablet: [
+        {
+          name: '서비스 시연',
+          vid: 'https://youtube.com/shorts/0jvBQkl_1cg?feature=share',
+        },
+      ],
+      mobile: [
+        {
+          name: '서비스 시연',
+          vid: 'https://youtube.com/shorts/we0snvL9TrI?feature=share',
+        },
+      ],
+    },
+  },
+  {
+    title: '💻 Portfolio',
     desc: '포트폴리오 웹사이트',
     skillDesc: [
       'Vite를 이용한 프로젝트 개발환경 구축',
