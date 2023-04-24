@@ -148,6 +148,7 @@ const NavList = styled.div`
       }
       &.active {
         background-color: ${(props) => props.theme.colors.boxColor};
+        color: ${(props) => props.theme.colors.pointColor};
       }
     }
   }
@@ -205,7 +206,7 @@ const MenuButton = styled.div`
     left: 0;
     width: 100%;
     height: 4px;
-    background-color: #fff;
+    background-color: ${(props) => props.theme.colors.pointColor};
     border-radius: 4px;
   }
   .line-1 {
