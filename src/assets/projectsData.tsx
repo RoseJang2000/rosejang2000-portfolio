@@ -92,55 +92,55 @@ export const projectsData: Project[] = [
       desktop: [
         {
           name: '메인 페이지',
-          vid: 'https://youtu.be/rp8r1mLOY74',
+          vid: 'rp8r1mLOY74',
         },
         {
           name: '대륙 선택 페이지',
-          vid: 'https://youtu.be/rT_c0PzQmPQ',
+          vid: 'rT_c0PzQmPQ',
         },
         {
           name: '동행글 리스트 페이지',
-          vid: 'https://youtu.be/IEy3d72Rnug',
+          vid: 'IEy3d72Rnug',
         },
         {
           name: '프로필 페이지',
-          vid: 'https://youtu.be/hI7eLQlPilU',
+          vid: 'hI7eLQlPilU',
         },
       ],
       tablet: [
         {
           name: '메인 페이지',
-          vid: 'https://youtube.com/shorts/D_JsBL4N_4Y?feature=share',
+          vid: 'D_JsBL4N_4Y',
         },
         {
           name: '대륙 선택 페이지',
-          vid: 'https://youtube.com/shorts/88YdHQVpaU0?feature=share',
+          vid: '88YdHQVpaU0',
         },
         {
           name: '동행글 리스트 페이지',
-          vid: 'https://youtube.com/shorts/0d7q2Lvfiu8?feature=share',
+          vid: '0d7q2Lvfiu8',
         },
         {
           name: '프로필 페이지',
-          vid: 'https://youtube.com/shorts/pYIjzj44pBg?feature=share',
+          vid: 'pYIjzj44pBg',
         },
       ],
       mobile: [
         {
           name: '메인 페이지',
-          vid: 'https://youtube.com/shorts/5jpRw1slyww?feature=share',
+          vid: '5jpRw1slyww',
         },
         {
           name: '대륙 선택 페이지',
-          vid: 'https://youtube.com/shorts/nHyguTpfpIc?feature=share',
+          vid: 'nHyguTpfpIc',
         },
         {
           name: '동행글 리스트 페이지',
-          vid: 'https://youtube.com/shorts/SU67dX2dU88?feature=share',
+          vid: 'SU67dX2dU88',
         },
         {
           name: '프로필 페이지',
-          vid: 'https://youtube.com/shorts/mlksjr5q26M?feature=share',
+          vid: 'mlksjr5q26M',
         },
       ],
     },
@@ -172,19 +172,19 @@ export const projectsData: Project[] = [
       desktop: [
         {
           name: '서비스 시연',
-          vid: 'https://youtu.be/kcMbnqpx7ho',
+          vid: 'kcMbnqpx7ho',
         },
       ],
       tablet: [
         {
           name: '서비스 시연',
-          vid: 'https://youtube.com/shorts/ee8iCfevFRk?feature=share',
+          vid: 'ee8iCfevFRk',
         },
       ],
       mobile: [
         {
           name: '서비스 시연',
-          vid: 'https://youtube.com/shorts/w2ovJeNBpF8?feature=share',
+          vid: 'w2ovJeNBpF8',
         },
       ],
     },
@@ -225,7 +225,7 @@ export const projectsData: Project[] = [
       desktop: [
         {
           name: '서비스 시연',
-          vid: 'https://youtu.be/3OUVOEkAos0',
+          vid: '3OUVOEkAos0',
           vidDesc:
             '0:00 ~ 0:07 : Home page,0:08 ~ 0:30 : Players page,0:31 ~ 0:44 : News page',
         },
@@ -233,7 +233,7 @@ export const projectsData: Project[] = [
       tablet: [
         {
           name: '서비스 시연',
-          vid: 'https://youtube.com/shorts/-ECw6RWe134',
+          vid: '-ECw6RWe134',
           vidDesc:
             '0:00 ~ 0:08 : Home page,0:09 ~ 0:20 : Players page,0:21 ~ 0:30 : News page',
         },
@@ -241,7 +241,7 @@ export const projectsData: Project[] = [
       mobile: [
         {
           name: '서비스 시연',
-          vid: 'https://youtube.com/shorts/-Yk_ojfmi-s?feature=share',
+          vid: '-Yk_ojfmi-s',
           vidDesc:
             '0:00 ~ 0:04 : Home page,0:05 ~ 0:14 : Players page,0:15 ~ 0:23 : News page',
         },
@@ -277,19 +277,19 @@ export const projectsData: Project[] = [
       desktop: [
         {
           name: '서비스 시연',
-          vid: 'https://youtu.be/geNqPfvIOt4',
+          vid: 'geNqPfvIOt4',
         },
       ],
       tablet: [
         {
           name: '서비스 시연',
-          vid: 'https://youtube.com/shorts/0jvBQkl_1cg?feature=share',
+          vid: '0jvBQkl_1cg',
         },
       ],
       mobile: [
         {
           name: '서비스 시연',
-          vid: 'https://youtube.com/shorts/we0snvL9TrI?feature=share',
+          vid: 'we0snvL9TrI',
         },
       ],
     },
@@ -323,19 +323,19 @@ export const projectsData: Project[] = [
       desktop: [
         {
           name: '서비스 시연',
-          vid: 'https://youtu.be/0xR4Pep6Fbk',
+          vid: '0xR4Pep6Fbk',
         },
       ],
       tablet: [
         {
           name: '서비스 시연',
-          vid: 'https://youtube.com/shorts/QwcLa66THBc?feature=share',
+          vid: 'QwcLa66THBc',
         },
       ],
       mobile: [
         {
           name: '서비스 시연',
-          vid: 'https://youtube.com/shorts/XXZcGhxBFv0',
+          vid: 'XXZcGhxBFv0',
         },
       ],
     },
@@ -434,19 +434,19 @@ export const projectsData: Project[] = [
       desktop: [
         {
           name: '서비스 시연',
-          vid: 'https://youtu.be/k7jbFXVR4Ms',
+          vid: 'k7jbFXVR4Ms',
         },
       ],
       tablet: [
         {
           name: '서비스 시연',
-          vid: 'https://youtube.com/shorts/4ZRcJhwlFDE?feature=share',
+          vid: '4ZRcJhwlFDE',
         },
       ],
       mobile: [
         {
           name: '서비스 시연',
-          vid: 'https://youtube.com/shorts/aZ-6C3oqOFQ?feature=share',
+          vid: 'aZ-6C3oqOFQ',
         },
       ],
     },
